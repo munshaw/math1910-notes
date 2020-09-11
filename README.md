@@ -1,3 +1,3 @@
 # math1910-notes
 
-Conestoga Collage MAth1910 Notes
+Conestoga Collage Math1910 Notes
