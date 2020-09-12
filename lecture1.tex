@@ -1,0 +1,237 @@
+\chapter{Set Theory I}
+
+\mydefine
+{
+	A {\bf set} is a collection of distinct objects. Each object that appears in this collection is called an {\bf element} of the set.
+}
+
+This class treats unordered-lists as sets. For exmaple, the unordered-list $\{1,2,3,2\}$ is the 3-element set $\{1,2,3\}$. All you need to do is remove the duplicates.
+
+\myexample
+{
+	Here are a few examples of sets.
+	\begin{itemize}
+		\item Speices of birds
+		\item Coke brands
+		\item The numbers 6, 28, 496, and 8128
+	\end{itemize}
+}
+
+\myexample
+{
+	Here are some examples of non-sets.
+	\begin{itemize}
+		\item Everyone's age (elements must be distinct)
+		\item The most beautiful flowers (elements must be well defined)
+		\item The numbers 2, 3, 5, 7 in that order (elements must be unordered)
+	\end{itemize}
+}
+
+\section{Describing a Set}
+
+There are three ways that a set can be described.
+
+\begin{enumerate}
+	\item A written description. For example, "The set of even negative numbers."
+	\item A list (also called roster method/tabular form). For example, $S = \{2,3,5,7\}$.
+	\item Set-builder notation (or rule notation). For example, $P = \{2n+1\;:\;n \in \mathbb{Z}\}$.
+\end{enumerate}
+
+\section{Set-Builder Notation}
+
+I think the first two are fairly self explanitory, so lets break down builder notation. Consider $P = \{2n+1\;:\;n \in \mathbb{Z}\}$.
+
+\begin{itemize}
+	\item The first term, "$2n+1$", defines the elements in the set. Note that $n$ is variable.
+	\item The symbol "$:$" (or $|$) mean "such that", and signals we are doing something with $n$.
+	\item The symbol $\in$ means "is an element of". "$n \in \mathbb{Z}$" means that $n$ is an integer.
+	\item $\mathbb{Z}$ is the symbol for the set of integers ($\{\dots,-2,-1,0,1,2,3,\dots\}$).
+\end{itemize}
+
+So, this reads as "the set of numbers $2n+1$, where $n$ is an integer." This also known as the set of odd numbers. Take your time to understand reading this, you will see this notation a lot.
+
+\myexample
+{
+	Here are a few examples of set-builder notation.
+	\begin{itemize}
+		\item $S = \{x \;:\; x > 5, x \in \mathbb{N}\}$. This is the set of natural numbers above 5
+		\item $P = \{n \;:\; \text{factors}(n) = \{1,n\}\}$. This is the set of prime numbers
+		\item $F = \{g \;:\; 0\% \leq g < 55\%\}$. This is the set of where you don't want your final grade to end up
+	\end{itemize}
+}
+	
+\section{Some Common Definitions}
+
+Here are some terms and definitions you might run into. The rational number definition looks scary, but try to understand it piece-by-piece.
+
+\begin{tabular}{|c|c|c|}
+\hline
+Symbol & Name & Definition\\
+\hline
+$\phi$ or $\{\}$ & Null Set & The set with no elements\\
+ & Singleton Set & A set with one element\\
+ & Finite Set & A set with finite elements\\
+ & Infinite Set & A set with infinite elements\\
+$\mathbb{N}$ & Natural Numbers & $\{1,2,3,\dots\}$\\
+$\mathbb{W}$ & Whole Numbers & $\{0,1,2,3,\dots\}$\\
+$\mathbb{Z}$ & Integers & $\{\dots, -2, -1, 0, 1, 2, \dots\}$\\
+$\mathbb{Q}$ & Rational Numbers &
+$\displaystyle \bigg\{ \frac{p}{q} : p \in \mathbb{Z}, q \in \mathbb{Z}, q \neq 0 \bigg\}$\\
+$\mathbb{R}$ & Real Number & The set of all points on the number line\\
+\hline
+\end{tabular}
+
+\section{Compairing Sets}
+
+There are multiple ways to compair sets. We can check their {\bf cardinality} (number of elements), or we can check if they're {\bf equivalent} or {\bf equal}.
+
+\mydefine
+{
+	The number of elements in a finite set $S$ is called the {\bf cardinality} of $S$, denoted by $|S|$ or $n(S)$.
+}
+
+\myexample
+{
+	$|\{ n \;:\; n \leq 5, n \in \mathbb{W}\}| = |\{0,1,2,3,4,5\}| = 6$
+}
+
+\mydefine
+{
+	The sets $A$ and $B$ are said to be {\bf equivalent} if $|A| = |B|$, denoted by $A \sim B$.
+}
+
+\myexample
+{
+	The set $A = \{1,2,3,4,5\}$ is equivalent to the set $B = \{5,-2,17,32,12\}$, because $|A| = |B| = 5$.
+}
+
+\mydefine
+{
+	The sets $A$ and $B$ are said to be {\bf equal} if they have the same elements, and the same number of elements.
+}
+
+\myexample
+{
+	$\{1,2,3\} = \{3,2,1\}$, but $\{1,2,3\} \ne \{1,2\} \ne \{1,2,5\}$.
+}
+
+We can also check to see if a set is a {\bf subset} of another. For example, the even numbers are a subset of the integers. {\bf Proper subsets} are simular, except that they must have less elements than the set it comes from. When sets share no elements, they are called {\bf disjoint}.
+
+\mydefine
+{
+	A set $S$ is called a {\bf subset} of a set $T$, written as $S \subseteq T$, when every element of $S$ belongs to $T$.
+}
+
+\myexample
+{
+	$\{1,2,3\} \subseteq \{1,2,3,4\}$, and $\{1,2,3,4\} \subseteq \{1,2,3,4\}$
+}
+
+\mydefine
+{
+	A set $S$ is called a {\bf proper subset} of a set $T$, written as $S \subset T$, when $S$ is a subset of $T$ and there exists an element in $T$ which does not belong to $S$.
+}
+
+\myexample
+{
+	$\{1,2,3\} \subset \{1,2,3,4\}$, but $\{1,2,3,4\}$ is not a proper subset of $\{1,2,3,4\}$.
+}
+
+The {\bf superset} and {\bf proper superset} are the opposite definition. For example, if $A \subset B$, then $B \supset A$.
+
+\mydefine
+{
+	Two sets are {\bf disjoint} when they do not share any elements, ie $S \cap T=\phi$.
+}
+
+\myexample
+{
+	The sets $\{1,2,3\}$ and $\{4,5,6\}$ are disjoint, since they share no members.
+}
+
+
+
+\section{Set Operations}
+
+Operations are used to transform existing sets into news sets.  The first operation is the {\bf power set}. Basically, it's the set of all the possible combinations.
+
+\mydefine
+{
+	The {\bf power set} is the set of all subsets, denoted by $\text{P}(A)$.
+}
+
+\myproposition
+{
+	The cardinality of the power set of $A$ is given by $2^{|A|}$.
+}
+
+\myexample
+{
+	If $A=\{a,b\}$, than $\text{P}(A) = \{\phi,\{a\},\{b\},\{a,b\}\}$. The cardinality of $A$ is $2^{2}=4$.
+}
+
+The {\bf compliment} of a set is "everything that's not in the set". Since we cannot literally put "everything" into a set, we first define what {\bf universe} we're in. 
+
+\mydefine
+{
+	The {\bf universe of discourse} (or {\bf universal set}) contains all of the objects we might encounter in a given situation, denoted by $\mathcal{U}$.
+}
+
+\myexample
+{
+	There are 400 Pokemon in the Galar Pokedex. You might say those Pokemon are our universal set $\mathcal{U}$, if we are trying to complete the Pokedex.
+}
+
+\mydefine
+{
+	The {\bf compliment} of a set $S$, written as $\bar{S}$ (or $S'$/$S^C$), is the set of all elements in $\mathcal{U}$ but not in $S$. It can be written as
+	\[
+		\bar{S} = \{x \in \mathcal{U} \;:\; x \notin S\}
+	\]
+}
+
+\myexample
+{
+	On a six-sided die, what is the complement of the even sides $\{2,4,6\}$? Answer: the odd sides $\{1,3,5\}$.
+}
+
+Finally, lets talk about what we can do with two sets. We can combine them with a {\bf union}, we can find shared elements with the {\bf intersection}, and we can remove elements with the {\bf set-difference}.
+
+\mydefine
+{
+	The {\bf union} of two sets $S$ and $T$, denoted as $S \cup T$, is the set of all elements belonging to either set $S$ or set $T$. We can define it as
+	\[
+		S \cup T = \{x \;:\; x \in S \;\text{OR}\; x \in T \} = \{x \;:\; x \in S \vee x \in T \}
+	\]
+}
+
+\myexample
+{
+	$\{a,b,c\} \cup \{1,2,a\} = \{1,2,a,b,c\}$
+}
+
+\mydefine
+{
+	The {\bf intersection} of two sets $S$ and $T$, denoted by $S\cap T$, is the set of all elements belonging to both set $S$ and set $T$. We can define it as
+	\[
+		S \cap T = \{ x : x \in S \;\text{AND}\; x \in T\} = \{ x : x \in S \wedge x \in T\}
+	\]
+}
+
+\myexample
+{
+	The intersection between even numbers and prime numbers is ${2}$, because 2 is the only number that is even and prime.
+}
+
+\mydefine
+{
+	The {\bf set-difference} of two sets $S$ and $T$, denoted by $S-T$, is the set of all elements belonging to $S$, but not $T$. We can define it as
+	\[
+		S-T = \{x : x \in S \;\text{AND}\; x \notin T\} = \{x : x \in S \wedge x \notin T\}
+	\]
+}
+
+\myexample
+{
+	$\{1,2,3\} - \{3\} = \{1,2\}$.
+}
