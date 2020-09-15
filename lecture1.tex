@@ -75,7 +75,7 @@ $\mathbb{C}$ & Complex Numbers & $\{a+bi : a \in \mathbb{Z}, b \in \mathbb{Z}\}$
 
 \myremark
 {
-	Just to let you know, {\bf this is completely optional!} I don't think we'll encounter complex numbers in this course. But they're included in the notes as an example, for some reason. If you're wondering what they are, than good for you! Here's an example. Solve the following system for $y$:
+	Just to let you know, {\bf this is completely optional!} I don't think we'll encounter complex numbers in this course. But they're included in the notes as an example, for some reason. If you're wondering what they are, than good for you! Here's an example. Solve the following system for $y \in \mathbb{R}$:
 	\begin{align*}
 		(x-4)^2+36=0\\
 		\frac{x^2}{2}-4x=y\\
@@ -84,18 +84,22 @@ $\mathbb{C}$ & Complex Numbers & $\{a+bi : a \in \mathbb{Z}, b \in \mathbb{Z}\}$
 	\begin{align*}
 		(x-4)^2+36=0\\
 		\implies (x-4)^2=-36\\
-		\implies x-4=\sqrt{-36}\\
+		\implies x-4=\pm\sqrt{-36}\\
 	\end{align*}
 	But it is impossible to take the square root of a negative number! Does that mean this system is \emph{unsolveable}? Trust me for a moment here, we will get a \emph{real} answer. Suppose we define the imaginary unit $\bf{i} = \sqrt{-1}$. Note that $i^2=-1$. Then we have
 	\begin{align*}
-		x-4=\sqrt{-36}\\
-		\implies x-4=6\sqrt{-1}\\
-		\implies x-4=6i\\
-		\implies x=4+6i\\
+		x-4=\pm\sqrt{-36}\\
+		\implies x-4=\pm6\sqrt{-1}\\
+		\implies x-4=\pm6i\\
+		\implies x=4\pm6i\\
 	\end{align*}
-	Now we have $x$ as a complex number. Substitute $x$ into the second equation to get $y$.
+	Now we have two complex values for $x$! Substitute $x$ into the second equation to get $y$.
 	\begin{align*}
 		y=\frac{x^2}{2}-4x\\
+		=\frac{(4\pm6i)^2}{2}-4(4\pm6i)\\
+	\end{align*}
+	I will remove $-6i$ now, since I know it will result in a complex answer.
+	\begin{align*}
 		=\frac{(4+6i)^2}{2}-4(4+6i)\\
 		=\frac{16+48i+36i^2}{2}-16-24i\\
 		=8+24i+18i^2-16-24i\\
@@ -208,9 +212,9 @@ The {\bf compliment} of a set is "everything that's not in the set". Since we ca
 
 \mydefine
 {
-	The {\bf compliment} of a set $S$, written as $\bar{S}$ (or $S'$/$S^C$), is the set of all elements in $\mathcal{U}$ but not in $S$. It can be written as
+	The {\bf compliment} of a set $S$, written as $S^\complement$ (or $\overline{S}$), is the set of all elements in $\mathcal{U}$ but not in $S$. It can be written as
 	\[
-		\bar{S} = \{x \;:\; \in \mathcal{U}, x \notin S\}
+		S^\complement = \{x \;:\; \in \mathcal{U}, x \notin S\}
 	\]
 }
 
