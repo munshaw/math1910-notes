@@ -1,0 +1,98 @@
+\chapter{Set Theory II}
+
+\section{Venn Diagrams}
+
+$A \cap B$\\
+\begin{venndiagram2sets}[shade=skyblue,showframe=false]
+	\fillACapB
+\end{venndiagram2sets}
+
+\myexample
+{
+	Suppose $A=\{a,b,c\}$ and $B=\{a,b,x,y\}$, then $A \cap B=\{a,b\}$ is visualised with:\\
+	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c},labelOnlyB={x,y},labelAB={a,b}]
+		\fillACapB
+	\end{venndiagram2sets}
+}
+
+$A \cup B$\\
+\begin{venndiagram2sets}[shade=skyblue,showframe=false]
+	\fillA \fillB
+\end{venndiagram2sets}
+
+\myexample
+{
+	Suppose $A=\{a,b,c\}$ and $B=\{a,b,x,y\}$, then $A \cup B=\{a,b,c,x,y\}$  is visualised with:\\
+	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c},labelOnlyB={x,y},labelAB={a,b}]
+		\fillA \fillB
+	\end{venndiagram2sets}
+}
+
+$A^\complement$\\
+\begin{venndiagram2sets}[shade=skyblue,overlap=2.4cm,hgap=2.2cm,vgap=0.5cm,labelNotAB={\;\quad\qquad $\mathcal{U}$},labelB={}]
+	\fillNotA
+\end{venndiagram2sets}
+
+\myexample
+{
+	Suppose $A=\{a,b,c\}$ and $\mathcal{U}=\{a,b,c,d,e,f,g,h\}$, then $A^\complement$ can be visualised with:\\
+	\begin{venndiagram2sets}[shade=skyblue,overlap=2.4cm,hgap=2.2cm,vgap=0.5cm,labelNotAB={\;\quad\qquad $\mathcal{U}$ \: $d,e,f,g,h$},labelOnlyA={$a,b,c$},labelB={}]
+		\fillNotA
+	\end{venndiagram2sets}
+}
+
+$A \cap B = \phi$\\
+\begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm]
+\end{venndiagram2sets}
+
+\myexample
+{
+	For example,\\
+	\begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm,labelOnlyA={a,b,c},labelOnlyB={1,2,3}]
+	\end{venndiagram2sets}
+}
+
+$A-B$\\
+\begin{venndiagram2sets}[shade=skyblue,showframe=false]
+	\fillOnlyA
+\end{venndiagram2sets}
+
+\myexample
+{
+	For example,\\
+	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={a,b,c,d},labelAB={a,b}]
+		\fillOnlyA
+	\end{venndiagram2sets}
+}
+
+$(A \cap B)^\complement$\\
+\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+	\fillNotAorNotB
+\end{venndiagram2sets}
+
+$(A \cap B)^\complement \cup B$\\
+\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+	\fillAll
+\end{venndiagram2sets}
+
+$(A \cap B) \cup (A \cup B^\complement)^\complement$\\
+$A \cap B$\\
+\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+	\fillACapB
+\end{venndiagram2sets}
+
+$A \cup B^\complement$\\
+\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+	\fillA \fillNotAorB
+\end{venndiagram2sets}
+
+$(A \cup B^\complement)^\complement$\\
+\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+	\fillOnlyB
+\end{venndiagram2sets}
+
+$(A \cap B) \cup (A \cup B^\complement)^\complement = B$\\
+\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+	\fillB
+\end{venndiagram2sets}
+
