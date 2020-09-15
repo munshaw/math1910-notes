@@ -5,6 +5,7 @@
 \usepackage{tabu}
 \usepackage{xcolor}
 \usepackage{tcolorbox}
+\tcbuselibrary{breakable}
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[chapter]
@@ -36,6 +37,17 @@
 		\begin{proposition}
 			#1
 		\end{proposition}
+	\end{tcolorbox}
+}
+
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+\newcommand*{\myremark}[1]
+{
+	\begin{tcolorbox}[breakable,colback=red!17!white,colframe=red!17!white]
+		\begin{remark}
+			#1
+		\end{remark}
 	\end{tcolorbox}
 }
 

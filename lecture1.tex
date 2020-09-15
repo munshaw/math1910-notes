@@ -67,9 +67,43 @@ $\mathbb{W}$ & Whole Numbers & $\{0,1,2,3,\dots\}$\\
 $\mathbb{Z}$ & Integers & $\{\dots, -2, -1, 0, 1, 2, \dots\}$\\
 $\mathbb{Q}$ & Rational Numbers &
 $\displaystyle \bigg\{ \frac{p}{q} : p \in \mathbb{Z}, q \in \mathbb{Z}, q \neq 0 \bigg\}$\\
-$\mathbb{R}$ & Real Number & The set of all points on the number line\\
+$\mathbb{R}$ & Real Numbers & The set of all points on the number line\\
+	& Irrational Numbers & $\mathbb{R}-\mathbb{Q}$ (real numbers that are not rational)\\
+$\mathbb{C}$ & Complex Numbers & $\{a+bi : a \in \mathbb{Z}, b \in \mathbb{Z}\}$\\
 \hline
 \end{tabular}
+
+\myremark
+{
+	Just to let you know, {\bf this is completely optional!} I don't think we'll encounter complex numbers in this course. But they're included in the notes as an example, for some reason. If you're wondering what they are, than good for you! Here's an example. Solve the following system for $y$:
+	\begin{align*}
+		(x-4)^2+36=0\\
+		\frac{x^2}{2}-4x=y\\
+	\end{align*}
+	We solve the first equation for $x$:
+	\begin{align*}
+		(x-4)^2+36=0\\
+		\implies (x-4)^2=-36\\
+		\implies x-4=\sqrt{-36}\\
+	\end{align*}
+	But it is impossible to take the square root of a negative number! Does that mean this system is \emph{unsolveable}? Trust me for a moment here, we will get a \emph{real} answer. Suppose we define the imaginary unit $\bf{i} = \sqrt{-1}$. Note that $i^2=-1$. Then we have
+	\begin{align*}
+		x-4=\sqrt{-36}\\
+		\implies x-4=6\sqrt{-1}\\
+		\implies x-4=6i\\
+		\implies x=4+6i\\
+	\end{align*}
+	Now we have $x$ as a complex number. Substitute $x$ into the second equation to get $y$.
+	\begin{align*}
+		y=\frac{x^2}{2}-4x\\
+		=\frac{(4+6i)^2}{2}-4(4+6i)\\
+		=\frac{16+48i+36i^2}{2}-16-24i\\
+		=8+24i+18i^2-16-24i\\
+		=18i^2-8\\
+		=-18-8=-26\\
+	\end{align*}
+	Even though $x$ is complex, we managed to get a real solution for $y$! There is no physical interpretation for imaginary numbers, but we sometimes see them when we break physical phenomenon down into systems of equations. If you've reached this far, than congrats for learning complex numbers!
+}
 
 \section{Compairing Sets}
 
