@@ -70,40 +70,39 @@ Yet again for set difference. $A-B$:
 
 \section{Applications for Venn Diagrams}
 
-Suppose we want to visualise $(A \cap B)^\complement \cup B$. Thats a little long so lets break it up. First lets look at $(A \cap B)^\complement$:
+\myexample
+{
+	Suppose we want to visualise $(A \cap B)^\complement \cup B$. Thats a little long so lets break it up. First lets look at $(A \cap B)^\complement$:\\
+	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+		\fillNotAorNotB
+	\end{venndiagram2sets}\\
+	And now lets add $B$. So, $(A \cap B)^\complement \cup B$ is:\\
+	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+		\fillAll
+	\end{venndiagram2sets}\\
+	And we see that $(A \cap B)^\complement \cup B$ is acutally the universal set $\mathcal{U}$!
+}
 
-\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
-	\fillNotAorNotB
-\end{venndiagram2sets}
+\myexample
+{
+	Let's try another one. $(A \cap B) \cup (A \cup B^\complement)^\complement$. Again, let's break this down. $A \cap B$ is simple enough.\\
+	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+		\fillACapB
+	\end{venndiagram2sets}\\
+	This one's a little harder. If you're having difficulty, try asking youself "is this section included in the set?" for every section of the diagram. It's a bit like a logic puzzle. So, $A \cup B^\complement$ is:\\
+	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+		\fillA \fillNotAorB
+	\end{venndiagram2sets}\\
+	We take the complement of above to get $(A \cup B^\complement)^\complement$:\\
+	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+		\fillOnlyB
+	\end{venndiagram2sets}\\
+	And now we glue them to get to get our union $(A \cap B) \cup (A \cup B^\complement)^\complement$:\\
+	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+		\fillB
+	\end{venndiagram2sets}\\
+	From this digram, we can see there is another way of writting $(A \cap B) \cup (A \cup B^\complement)^\complement$. It's just the set $B$!
+}
 
-And now lets add $B$. So, $(A \cap B)^\complement \cup B$ is:
+\section{Applications for Sets}
 
-\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
-	\fillAll
-\end{venndiagram2sets}
-
-And we see that $(A \cap B)^\complement \cup B$ is acutally the universal set $\mathcal{U}$! Let's try another one. $(A \cap B) \cup (A \cup B^\complement)^\complement$. Again, let's break this down. $A \cap B$ is simple enough.
-
-\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
-	\fillACapB
-\end{venndiagram2sets}
-
-This one's a little harder. If you're having difficulty, try asking youself "is this section included in the set?" for every section of the diagram. It's a bit like a logic puzzle. So, $A \cup B^\complement$ is:
-
-\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
-	\fillA \fillNotAorB
-\end{venndiagram2sets}
-
-We take the complement of above to get $(A \cup B^\complement)^\complement$:
-
-\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
-	\fillOnlyB
-\end{venndiagram2sets}
-
-And now we glue them to get to get our union $(A \cap B) \cup (A \cup B^\complement)^\complement$:
-
-\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
-	\fillB
-\end{venndiagram2sets}
-
-From this digram, we can see there is another way of writting $(A \cap B) \cup (A \cup B^\complement)^\complement$. It's just the set $B$!
