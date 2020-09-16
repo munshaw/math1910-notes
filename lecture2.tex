@@ -44,28 +44,28 @@ And now we look at the complement of the set. So everything within the \emph{uni
 	\end{venndiagram2sets}
 }
 
-And when we have two disjoint sets (two sets that do not share elements).
+And when we have two disjoint sets (two sets that do not share elements). So for $A \cap B = \phi$:
 
-$A \cap B = \phi$\\
 \begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm]
 \end{venndiagram2sets}
 
 \myexample
 {
-	For example,\\
+	For example, given the two sets $A=\{a,b,c\}$, and $B=\{1,2,3\}$, we can see that they share no elements and are disjoint.\\
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm,labelOnlyA={a,b,c},labelOnlyB={1,2,3}]
 	\end{venndiagram2sets}
 }
 
-$A-B$\\
+Yet again for set difference. $A-B$:
+
 \begin{venndiagram2sets}[shade=skyblue,showframe=false]
 	\fillOnlyA
 \end{venndiagram2sets}
 
 \myexample
 {
-	For example,\\
-	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={a,b,c,d},labelAB={a,b}]
+	For example, if $A=\{a,b,c,d\}$ and $B=\{c,d\}$, than $A-B=\{c,d\}$.\\
+	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c,d},labelAB={a,b}]
 		\fillOnlyA
 	\end{venndiagram2sets}
 }
