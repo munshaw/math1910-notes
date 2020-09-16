@@ -106,3 +106,16 @@ Yet again for set difference. $A-B$:
 
 \section{Applications for Sets}
 
+\myexample
+{
+	Suppose 150 children were surveyed. It was found that 35 played hockey, 71 played baseball, 30 played soccer, 10 played all three, 3 played only soccer, 17 played only hockey, 6 played only soccer and hockey, 48 played only baseball, and 53 played no sports.\\
+	First, lets draw the Venn Diagram. Start by drawing the three sets.\\
+	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={$\mathcal{U}$}]
+	\end{venndiagram3sets}\\
+	Now, let's fill some of this in. Since 53 didn't play anything, they are outside of the three sets. 3 Played only soccer, 17 played only hockey and 48 played only baseball. 10 Played all three, and 6 played only soccer and hockey. So we have:\\
+	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={$\mathcal{U}$},labelOnlyA={17},labelOnlyB={48},labelOnlyC={3},labelABC={10},labelOnlyAC={6}]
+	\end{venndiagram3sets}\\
+	We'll fill in some more intersections now. We know 6 played only soccer and hockey. How many played only hockey and baseball? There are 35 hockey players, take away 17 who played only hockey, take away 10 who played all three, and take away 6 who played hockey and soccer. So $35-17-10-6=2$. How many played only soccer and baseball? 71 baseball players, take away 48 who played baseball only, take away 10 who played all three, take away 2 who played hockey and baseball. So, $71-48-10-2=11$. The diagram looks like:\\
+	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={$\mathcal{U}$},labelOnlyA={17},labelOnlyB={48},labelOnlyC={3},labelABC={10},labelOnlyAB={2},labelOnlyBC={11}]
+	\end{venndiagram3sets}\\
+}
