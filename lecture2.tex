@@ -2,7 +2,8 @@
 
 \section{Venn Diagrams}
 
-$A \cap B$\\
+We can use {\bf Venn diagrams} to visualise operations between sets. For example, below the left circle represents the $A$ set, and the right circle reporesents the $B$ set. The coloured portion of the graphic represents the intersection (shared elements) between $A$ and $B$. So for $A \cap B$:
+
 \begin{venndiagram2sets}[shade=skyblue,showframe=false]
 	\fillACapB
 \end{venndiagram2sets}
@@ -15,7 +16,8 @@ $A \cap B$\\
 	\end{venndiagram2sets}
 }
 
-$A \cup B$\\
+This time we will visualise the union of two sets. Again, the coloured area represents everything withing the union. So for $A \cup B$:
+
 \begin{venndiagram2sets}[shade=skyblue,showframe=false]
 	\fillA \fillB
 \end{venndiagram2sets}
@@ -28,7 +30,8 @@ $A \cup B$\\
 	\end{venndiagram2sets}
 }
 
-$A^\complement$\\
+And now we look at the complement of the set. So everything within the \emph{universe of discourse} that is not in the set is coloured. So for $A^\complement$:
+
 \begin{venndiagram2sets}[shade=skyblue,overlap=2.4cm,hgap=2.2cm,vgap=0.5cm,labelNotAB={\;\quad\qquad $\mathcal{U}$},labelB={}]
 	\fillNotA
 \end{venndiagram2sets}
@@ -40,6 +43,8 @@ $A^\complement$\\
 		\fillNotA
 	\end{venndiagram2sets}
 }
+
+And when we have two disjoint sets (two sets that do not share elements).
 
 $A \cap B = \phi$\\
 \begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm]
