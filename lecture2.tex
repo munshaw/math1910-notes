@@ -113,9 +113,20 @@ Yet again for set difference. $A-B$:
 	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={$\mathcal{U}$}]
 	\end{venndiagram3sets}\\
 	Now, let's fill some of this in. Since 53 didn't play anything, they are outside of the three sets. 3 Played only soccer, 17 played only hockey and 48 played only baseball. 10 Played all three, and 6 played only soccer and hockey. So we have:\\
-	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={$\mathcal{U}$},labelOnlyA={17},labelOnlyB={48},labelOnlyC={3},labelABC={10},labelOnlyAC={6}]
+	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={\quad $\mathcal{U} \quad 53$},labelOnlyA={17},labelOnlyB={48},labelOnlyC={3},labelABC={10},labelOnlyAC={6}]
 	\end{venndiagram3sets}\\
-	We'll fill in some more intersections now. We know 6 played only soccer and hockey. How many played only hockey and baseball? There are 35 hockey players, take away 17 who played only hockey, take away 10 who played all three, and take away 6 who played hockey and soccer. So $35-17-10-6=2$. How many played only soccer and baseball? 71 baseball players, take away 48 who played baseball only, take away 10 who played all three, take away 2 who played hockey and baseball. So, $71-48-10-2=11$. The diagram looks like:\\
-	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={$\mathcal{U}$},labelOnlyA={17},labelOnlyB={48},labelOnlyC={3},labelABC={10},labelOnlyAB={2},labelOnlyBC={11}]
+	We'll fill in some more intersections now. How many played only hockey and baseball? There are 35 hockey players, take away 17 who played only hockey, take away 10 who played all three, and take away 6 who played hockey and soccer. So $35-17-10-6=2$. How many played only soccer and baseball? 71 baseball players, take away 48 who played baseball only, take away 10 who played all three, take away 2 who played hockey and baseball. So, $71-48-10-2=11$. The diagram looks like:\\
+	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={\quad $\mathcal{U} \quad 53$},labelOnlyA={17},labelOnlyB={48},labelOnlyC={3},labelABC={10},labelOnlyAB={2},labelOnlyBC={11},labelOnlyAC={6}]
 	\end{venndiagram3sets}\\
+	Now we can use this to answer some questions.
+	\begin{enumerate}
+		\item How many played soccer and baseball only? $11$
+		\item How many played hockey and baseball only? $2$
+		\item How many played soccer and baseball? $10+11=21$
+		\item How many played soccer {\bf or} baseball but not hockey? $48+11+3=62$
+		\item How many played exactly 2 games? $6+2+11=19$
+		\item How many played exactly 1 game? $17+48+3=68$
+		\item How many played only soccer? $3$
+		\item How many played soccer {\bf and} baseball but not hockey? $3+48=51$
+	\end{enumerate}
 }
