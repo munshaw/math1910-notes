@@ -72,7 +72,11 @@ Yet again for set difference. $A-B$:
 
 \myexample
 {
-	Suppose we want to visualise $(A \cap B)^\complement \cup B$. Thats a little long so lets break it up. First lets look at $(A \cap B)^\complement$:\\
+	Suppose we want to visualise $(A \cap B)^\complement \cup B$. Thats a little long so lets break it up. Recall what $A \cap B$ looks like.\\
+	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
+		\fillACapB
+	\end{venndiagram2sets}\\
+	Now, we'll invert that to get $(A \cap B)^\complement$:\\
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillNotAorNotB
 	\end{venndiagram2sets}\\
@@ -89,15 +93,15 @@ Yet again for set difference. $A-B$:
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillACapB
 	\end{venndiagram2sets}\\
-	This one's a little harder. If you're having difficulty, try asking youself "is this section included in the set?" for every section of the diagram. It's a bit like a logic puzzle. So, $A \cup B^\complement$ is:\\
+	The next one is $A \cup B^\complement$, a little bit more tricky. That can be read as the area of A, plus the area of not B. Think about it for a bit, its a logic puzzle.
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillA \fillNotAorB
 	\end{venndiagram2sets}\\
-	We take the complement of above to get $(A \cup B^\complement)^\complement$:\\
+	We take the complement of above (inverting it) to get $(A \cup B^\complement)^\complement$:\\
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillOnlyB
 	\end{venndiagram2sets}\\
-	And now we glue them to get to get our union $(A \cap B) \cup (A \cup B^\complement)^\complement$:\\
+	And now we glue them together to get to get our union $(A \cap B) \cup (A \cup B^\complement)^\complement$:\\
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillB
 	\end{venndiagram2sets}\\
