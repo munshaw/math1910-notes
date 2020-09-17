@@ -134,3 +134,33 @@ Yet again for set difference. $A-B$:
 		\item How many played soccer {\bf and} baseball but not hockey? $3+48=51$
 	\end{enumerate}
 }
+
+\myexample
+{
+	Fourty students who play board games was surveyed.\\
+	\begin{tabular}{r|l}
+		\hline
+		Number of students & Game(s) played\\
+		\hline
+		18 & Chess\\
+		20 & Scrabble\\
+		27 & Carrom\\
+		7  & Chess \& Scrabble\\
+		12 & Scrabble \& Carrom\\
+		4  & Chess \& Carrom \& Scrabble\\
+		\hline
+		\multicolumn{2}{c}{40 Total}\\
+		\hline
+	\end{tabular}\\
+	We begin by drawing our Venn diagram. We are given the Chess \& Carrom \& Scrabble intersection as $4$. We can use that to find our Chess \& Scrabble only ($7-4=3$) and Scrabble \& Charrom only ($12-4=8$) intersections. Finally, we can calculate our scrabble-only section ($20-3-4-8=5$).\\
+	\begin{venndiagram3sets}[shade=skyblue,showframe=false,labelA={Chess},labelB={Scrabble},labelC={Carrom},labelABC={4},labelOnlyAB={3},labelOnlyBC={8},labelOnlyB={5}]
+	\end{venndiagram3sets}\\
+	Now it gets tricky. Consider the following highlighted section ($\text{Chess} \cup \text{Carrom} - \text{Scrabble}$):\\
+	\begin{venndiagram3sets}[shade=skyblue,showframe=false,labelA={Chess},labelB={Scrabble},labelC={Carrom},labelABC={4},labelOnlyAB={3},labelOnlyBC={8},labelOnlyB={5}]
+		\fillOnlyA \fillOnlyC \fillACapCNotB
+	\end{venndiagram3sets}\\
+	There must be $40-20=20$ students in there. We know that $27-8-4=15$ of them play Carrom, and that $18-4-3=11$ of them play chess. So the Chess \& Carrom only intersection must be $15+11-20=6$. Thus the chess-only section is $11-6=5$, and the carrom-only section is $15-6=9$.\\
+	\begin{venndiagram3sets}[shade=skyblue,showframe=false,labelA={Chess},labelB={Scrabble},labelC={Carrom},labelABC={4},labelOnlyAB={3},labelOnlyBC={8},labelOnlyB={5},labelOnlyAC={6},labelOnlyA={5},labelOnlyC={9}]
+	\end{venndiagram3sets}\\
+	The number of people who play both Chess \& Carrom is $6+4=10$, and the number of people who play Chess and Carrom but not Scrabble is $6$.
+}
