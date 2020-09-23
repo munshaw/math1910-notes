@@ -6,51 +6,18 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \tcbuselibrary{breakable}
+\tcbuselibrary{skins}
+\tcbuselibrary{theorems}
 \usepackage{venndiagram}
 
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\newcommand*{\mydefine}[1]
-{
-	\begin{tcolorbox}[colback=yellow!17!white,colframe=yellow!17!white]
-		\begin{definition}
-			#1
-		\end{definition}
-	\end{tcolorbox}
-}
+\newtcbtheorem[number within=chapter]{boxdefine}{Definition}{colback=yellow!5,colframe=yellow!35!black,fonttitle=\bfseries}{th}
 
-\theoremstyle{definition}
-\newtheorem{example}[definition]{Example}
-\newcommand*{\myexample}[1]
-{
-	\begin{tcolorbox}[breakable,colback=green!17!white,colframe=green!17!white]
-		\begin{example}
-			#1
-		\end{example}
-	\end{tcolorbox}
-}
+\newtcbtheorem[number within=chapter]{boxexample}{Example}{breakable,enhanced jigsaw,colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
 
-\theoremstyle{definition}
-\newtheorem{proposition}[definition]{Proposition}
-\newcommand*{\myproposition}[1]
-{
-	\begin{tcolorbox}[colback=blue!17!white,colframe=blue!17!white]
-		\begin{proposition}
-			#1
-		\end{proposition}
-	\end{tcolorbox}
-}
+\newtcbtheorem[number within=chapter]{boxproposition}{Proposition}{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
 
-\theoremstyle{definition}
-\newtheorem*{remark}{Remark}
-\newcommand*{\myremark}[1]
-{
-	\begin{tcolorbox}[breakable,colback=red!17!white,colframe=red!17!white]
-		\begin{remark}
-			#1
-		\end{remark}
-	\end{tcolorbox}
-}
+
+\newtcbtheorem[number within=chapter]{boxremark}{Remark}{enhanced jigsaw, breakable,colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
 
 \definecolor{skyblue}{RGB}{125,212,216}
 \newcommand*{\mytitle}[1]

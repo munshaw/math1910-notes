@@ -6,13 +6,12 @@ We will use {\bf Venn diagrams} to visualise operations between sets. I think th
 	\fillACapB
 \end{venndiagram2sets}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Suppose $A=\{a,b,c\}$ and $B=\{a,b,x,y\}$, then $A \cap B=\{a,b\}$ is visualised with:\\
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c},labelOnlyB={x,y},labelAB={a,b}]
 		\fillACapB
 	\end{venndiagram2sets}
-}
+\end{boxexample}
 
 This time we will visualise the union of two sets. Again, the coloured area represents everything withing the union. So for $A \cup B$:
 
@@ -20,13 +19,12 @@ This time we will visualise the union of two sets. Again, the coloured area repr
 	\fillA \fillB
 \end{venndiagram2sets}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Suppose $A=\{a,b,c\}$ and $B=\{a,b,x,y\}$, then $A \cup B=\{a,b,c,x,y\}$  is visualised with:\\
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c},labelOnlyB={x,y},labelAB={a,b}]
 		\fillA \fillB
 	\end{venndiagram2sets}
-}
+\end{boxexample}
 
 And now we look at the complement of the set. So everything within the \emph{universe of discourse} that is not in the set is coloured. So for $A^\complement$:
 
@@ -34,25 +32,23 @@ And now we look at the complement of the set. So everything within the \emph{uni
 	\fillNotA
 \end{venndiagram2sets}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Suppose $A=\{a,b,c\}$ and $\mathcal{U}=\{a,b,c,d,e,f,g,h\}$, then $A^\complement=\{d,e,f,g,h\}$ can be visualised with:\\
 	\begin{venndiagram2sets}[shade=skyblue,overlap=2.4cm,hgap=2.2cm,vgap=0.5cm,labelNotAB={\;\quad\qquad $\mathcal{U}$ \: $d,e,f,g,h$},labelOnlyA={$a,b,c$},labelB={}]
 		\fillNotA
 	\end{venndiagram2sets}
-}
+\end{boxexample}
 
 And when we have two disjoint sets (two sets that do not share elements). So for $A \cap B = \phi$:
 
 \begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm]
 \end{venndiagram2sets}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	For example, given the two sets $A=\{a,b,c\}$, and $B=\{1,2,3\}$, we can see that they share no elements and are disjoint.\\
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm,labelOnlyA={a,b,c},labelOnlyB={1,2,3}]
 	\end{venndiagram2sets}
-}
+\end{boxexample}
 
 Yet again for set difference. $A-B$:
 
@@ -60,18 +56,16 @@ Yet again for set difference. $A-B$:
 	\fillOnlyA
 \end{venndiagram2sets}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	For example, if $A=\{a,b,c,d\}$ and $B=\{c,d\}$, than $A-B=\{c,d\}$.\\
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c,d},labelAB={a,b}]
 		\fillOnlyA
 	\end{venndiagram2sets}
-}
+\end{boxexample}
 
 \section{Applications for Venn Diagrams}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Suppose we want to visualise $(A \cap B)^\complement \cup B$. Thats a little long so lets break it up. Recall what $A \cap B$ looks like.\\
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillACapB
@@ -85,10 +79,9 @@ Yet again for set difference. $A-B$:
 		\fillAll
 	\end{venndiagram2sets}\\
 	And we see that $(A \cap B)^\complement \cup B$ is acutally the universal set $\mathcal{U}$!
-}
+\end{boxexample}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Let's try another one. $(A \cap B) \cup (A \cup B^\complement)^\complement$. Again, let's break this down. $A \cap B$ is simple enough.\\
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillACapB
@@ -106,12 +99,11 @@ Yet again for set difference. $A-B$:
 		\fillB
 	\end{venndiagram2sets}\\
 	From this digram, we can see there is another way of writting $(A \cap B) \cup (A \cup B^\complement)^\complement$. It's just the set $B$!
-}
+\end{boxexample}
 
 \section{Applications for Sets}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Suppose 150 children were surveyed. It was found that 35 played hockey, 71 played baseball, 30 played soccer, 10 played all three, 3 played only soccer, 17 played only hockey, 6 played only soccer and hockey, 48 played only baseball, and 53 played no sports.\\
 	First, lets draw the Venn Diagram. Start by drawing the three sets.\\
 	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={$\mathcal{U}$}]
@@ -133,10 +125,9 @@ Yet again for set difference. $A-B$:
 		\item How many played only soccer? $3$
 		\item How many played soccer {\bf and} baseball but not hockey? $3+48=51$
 	\end{enumerate}
-}
+\end{boxexample}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Fourty students who play board games was surveyed.\\
 	\begin{tabular}{r|l}
 		\hline
@@ -163,4 +154,4 @@ Yet again for set difference. $A-B$:
 	\begin{venndiagram3sets}[shade=skyblue,showframe=false,labelA={Chess},labelB={Scrabble},labelC={Carrom},labelABC={4},labelOnlyAB={3},labelOnlyBC={8},labelOnlyB={5},labelOnlyAC={6},labelOnlyA={5},labelOnlyC={9}]
 	\end{venndiagram3sets}\\
 	The number of people who play both Chess \& Carrom is $6+4=10$, and the number of people who play Chess and Carrom but not Scrabble is $6$.
-}
+\end{boxexample}

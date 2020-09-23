@@ -1,21 +1,20 @@
 \chapter{Set Theory I}
 
-\mydefine
-{
+\begin{boxdefine}{Set}{}
 	A {\bf set} is a collection of distinct objects. Each object that appears in this collection is called an {\bf element} of the set.
-}
+\end{boxdefine}
 
 Elements in sets must be well-defined, unordered, and distinct. You may \emph{describe} sets with duplicate elements, but duplicates do not enlarge the set at all. For example $\{1,2,3,2\}=\{1,2,3\}$, and the number of elements in $\{1,2,3,2\}$ is 3.
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Here are a few examples of sets.
+
 	\begin{itemize}
 		\item Known speices of birds
 		\item Coke brands
 		\item The numbers 6, 28, 496, and 8128
 	\end{itemize}
-}
+\end{boxexample}
 
 \section{Describing a Set}
 
@@ -40,15 +39,15 @@ I think the first two are fairly self explanitory, so lets break down builder no
 
 So, this reads as "the set of numbers $2n+1$, where $n$ is an integer." This also known as the set of odd numbers. Take your time to understand reading this, you will see this notation a lot.
 
-\myexample
-{
+\begin{boxexample}{}{}
 	Here are a few examples of set-builder notation.
+
 	\begin{itemize}
 		\item $S = \{x \;:\; x > 5, x \in \mathbb{N}\}$. This is the set of natural numbers above 5
 		\item $P = \{n \;:\; \text{factors}(n) = \{1,n\}, 1 < n\}$. This is the set of prime numbers
 		\item $F = \{g \;:\; 0\% \leq g < 55\%\}$. This is the set of where you don't want your final grade to end up
 	\end{itemize}
-}
+\end{boxexample}
 	
 \section{Some Common Definitions}
 
@@ -73,9 +72,9 @@ $\mathbb{C}$ & Complex Numbers & $\{a+bi : a \in \mathbb{Z}, b \in \mathbb{Z}\}$
 \hline
 \end{tabular}
 
-\myremark
-{
+\begin{boxremark}{Imaginary Numbers}{}
 	Just to let you know, {\bf this is completely optional!} I don't think we'll encounter complex numbers in this course. But they're included in the official notes, for some reason. If you're wondering what they are, than good for you! Here's an example. Solve the following system for $y \in \mathbb{R}$:
+
 	\begin{align*}
 		(x-4)^2+36=0\\
 		\frac{x^2}{2}-4x=y\\
@@ -86,14 +85,18 @@ $\mathbb{C}$ & Complex Numbers & $\{a+bi : a \in \mathbb{Z}, b \in \mathbb{Z}\}$
 		\implies (x-4)^2=-36\\
 		\implies x-4=\pm\sqrt{-36}\\
 	\end{align*}
+
 	But it is impossible to take the square root of a negative number! Does that mean this system is \emph{unsolveable}? Trust me for a moment here, we will get a \emph{real} answer. Suppose we define the imaginary unit $\bf{i} = \sqrt{-1}$ (and $i^2=-1$). Then we have
+
 	\begin{align*}
 		x-4=\pm\sqrt{-36}\\
 		\implies x-4=\pm6\sqrt{-1}\\
 		\implies x-4=\pm6i\\
 		\implies x=4\pm6i\\
 	\end{align*}
+
 	Now we have two complex values for $x$! Substitute $x$ into the second equation to get $y$.
+
 	\begin{align*}
 		y=\frac{x^2}{2}-4x\\
 		=\frac{(4\pm6i)^2}{2}-4(4\pm6i)\\
@@ -102,162 +105,142 @@ $\mathbb{C}$ & Complex Numbers & $\{a+bi : a \in \mathbb{Z}, b \in \mathbb{Z}\}$
 		=18i^2-8\\
 		=-18-8=-26\\
 	\end{align*}
+
 	Even though $x$ has two posible complex values, we managed to get one real solution for $y$! There is no physical interpretation for imaginary numbers, but we sometimes see them when we break physical phenomenon into systems of equations. If you've reached this far, than congrats for learning complex numbers!
-}
+\end{boxremark}
 
 \section{Compairing Sets}
 
 There are multiple ways to compair sets. We can check their {\bf cardinality} (number of elements), or we can check if they're {\bf equivalent} or {\bf equal}.
 
-\mydefine
-{
+\begin{boxdefine}{Cardinality}{}
 	The number of elements in a finite set $S$ is called the {\bf cardinality} of $S$, denoted by $|S|$ or $n(S)$.
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	$|\{ n \;:\; n \leq 5, n \in \mathbb{W}\}| = |\{0,1,2,3,4,5\}| = 6$
-}
+\end{boxexample}
 
-\mydefine
-{
+
+\begin{boxdefine}{Equivalent}{}
 	The sets $A$ and $B$ are said to be {\bf equivalent} if $|A| = |B|$, denoted by $A \sim B$.
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	The set $A = \{1,2,3,4,5\}$ is equivalent to the set $B = \{5,-2,17,32,12\}$, because $|A| = |B| = 5$.
-}
+\end{boxexample}
 
-\mydefine
-{
+
+\begin{boxdefine}{Equal}{}
 	The sets $A$ and $B$ are said to be {\bf equal} if they have the same elements, and the same number of elements.
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	$\{1,2,3\} = \{3,2,1\}$, but $\{1,2,3\} \ne \{1,2\} \ne \{1,2,5\}$.
-}
+\end{boxexample}
 
 We can also check to see if a set is a {\bf subset} of another. For example, the even numbers are a subset of the integers. {\bf Proper subsets} are simular, except that they must have less elements than the set it comes from. When sets share no elements, they are called {\bf disjoint}.
 
-\mydefine
-{
+\begin{boxdefine}{Subset}{}
 	A set $S$ is called a {\bf subset} of a set $T$, written as $S \subseteq T$, when every element of $S$ belongs to $T$.
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	$\{1,2,3\} \subseteq \{1,2,3,4\}$, and $\{1,2,3,4\} \subseteq \{1,2,3,4\}$
-}
+\end{boxexample}
 
-\mydefine
-{
+\begin{boxdefine}{Proper Subset}{}
 	A set $S$ is called a {\bf proper subset} of a set $T$, written as $S \subset T$, when $S$ is a subset of $T$ and there exists an element in $T$ which does not belong to $S$.
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	$\{1,2,3\} \subset \{1,2,3,4\}$, but $\{1,2,3,4\}$ is not a proper subset of $\{1,2,3,4\}$.
-}
+\end{boxexample}
 
 The {\bf superset} and {\bf proper superset} are the opposite definition. For example, if $A \subset B$, then $B \supset A$.
 
-\mydefine
-{
+\begin{boxdefine}{Disjoint}{}
 	Two sets are {\bf disjoint} when they do not share any elements, ie $S \cap T=\phi$.
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	The sets $\{1,2,3\}$ and $\{4,5,6\}$ are disjoint, since they share no members.
-}
-
-
+\end{boxexample}
 
 \section{Set Operations}
 
 Operations are used to transform existing sets into news sets.  The first operation is the {\bf power set}. Basically, it's the set of all the possible combinations.
 
-\mydefine
-{
+\begin{boxdefine}{Powerset}{}
 	The {\bf power set} is the set of all subsets, denoted by $\text{P}(A)$.
-}
+\end{boxdefine}
 
-\myproposition
-{
+\begin{boxproposition}{Cardinality of the Power Set}{}
 	The cardinality of the power set of $A$ is given by $2^{|A|}$.
-}
+\end{boxproposition}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	If $A=\{a,b\}$, than $\text{P}(A) = \{\phi,\{a\},\{b\},\{a,b\}\}$. The cardinality of $\text{P}(A)$ is $2^{2}=4$.
-}
+\end{boxexample}
 
 The {\bf compliment} of a set is "everything that's not in the set". Since we cannot literally put "everything" into a set, we first define what {\bf universe} we're in. 
 
-\mydefine
-{
+\begin{boxdefine}{Universe of Discourse}{}
 	The {\bf universe of discourse} (or {\bf universal set}) contains all of the objects we might encounter in a given situation, denoted by $\mathcal{U}$.
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	There are 400 Pokemon in the Galar Pokedex. You might say those Pokemon are our universal set $\mathcal{U}$, if we are trying to complete the Pokedex.
-}
+\end{boxexample}
 
-\mydefine
-{
+\begin{boxdefine}{Complement}{}
 	The {\bf compliment} of a set $S$, written as $S^\complement$ (or $\overline{S}$), is the set of all elements in $\mathcal{U}$ but not in $S$. It can be written as
+
 	\[
 		S^\complement = \{x \;:\; \in \mathcal{U}, x \notin S\}
 	\]
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	On a six-sided die, what is the compliment of the even sides $\{2,4,6\}$? Answer: the odd sides $\{1,3,5\}$.
-}
+\end{boxexample}
 
 Finally, lets talk about what we can do with two sets. We can combine them with a {\bf union}, we can find shared elements with the {\bf intersection}, and we can remove elements with the {\bf set-difference}.
 
-\mydefine
-{
+\begin{boxdefine}{Union}{}
 	The {\bf union} of two sets $S$ and $T$, denoted as $S \cup T$, is the set of all elements belonging to either set $S$ or set $T$. We can define it as
+
 	\[
 		S \cup T = \{x \;:\; x \in S \;\text{OR}\; x \in T \} = \{x \;:\; x \in S \vee x \in T \}
 	\]
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	$\{a,b,c\} \cup \{1,2,a\} = \{1,2,a,b,c\}$
-}
+\end{boxexample}
 
 If the sets $A$ and $B$ are disjoint ($A \cap B = \phi$), we call their union ($A \cup B$) a {\bf disjoint union}.
 
-\mydefine
-{
+\begin{boxdefine}{Union}{}
 	The {\bf intersection} of two sets $S$ and $T$, denoted by $S\cap T$, is the set of all elements belonging to both set $S$ and set $T$. We can define it as
+
 	\[
 		S \cap T = \{ x : x \in S \;\text{AND}\; x \in T\} = \{ x : x \in S \wedge x \in T\}
 	\]
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	The intersection between even numbers and prime numbers is ${2}$, because 2 is the only number that is even and prime.
-}
+\end{boxexample}
 
-\mydefine
-{
+\begin{boxdefine}{Set-Difference}{}
 	The {\bf set-difference} of two sets $S$ and $T$, denoted by $S-T$ (or $S \setminus T$), is the set of all elements belonging to $S$, but not $T$. We can define it as
+
 	\[
 		S-T = \{x : x \in S \;\text{AND}\; x \notin T\} = \{x : x \in S \wedge x \notin T\}
 	\]
-}
+\end{boxdefine}
 
-\myexample
-{
+\begin{boxexample}{}{}
 	$\{1,2,3\} - \{3\} = \{1,2\}$.
-}
+\end{boxexample}
