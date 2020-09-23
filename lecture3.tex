@@ -1,0 +1,195 @@
+\chapter{Set Theory 3}
+
+Sets can have a finite or infinite number of elements. Beleive it or not, we can still determine wether or not two infinite sets have the same cardinality using the following definition.
+
+\begin{boxdefine}{One-to-one correspondence}{}
+	A {\bf one-to-one correspondence} between sets $A$ and $B$ is a pairing of each object in $A$ with one and only one object in $B$, and each object in $B$ paired with one and only one object in $A$. If such a correspondence exists, than we say $A$ and $B$ are {\bf equivalent}.
+\end{boxdefine}
+
+\begin{boxexample}{}{}
+	If $A=\{1,2,3,4,\dots\}$ and $B=\{1,4,9,16,\dots\}$, we can say that the one-to-one correspondence is $a=b^2, a \in A, b \in B$, and the two sets are equivalent.
+\end{boxexample}
+
+We can also determine if one infinite set is a {\bf subset} of another infinite set. If each object in $A$ is paired with one and only one object in $B$, but not the other way around, than we say $A$ is a proper subset of $B$.
+
+\begin{boxexample}{}{}
+	If $A=\{2,3,4,5,\dots\}$ and $B=\{1,2,3,4,5,\dots\}$, than $A$ is a proper subset of $B$, because the one-to-one corresponce $a=b, a \in A, b \in B$
+\end{boxexample}
+
+\chapter{Logic I}
+
+\begin{boxdefine}{Logical Statement}{}
+A {\bf logical statement} is an expression that has a definite state of being either true or false.
+\end{boxdefine}
+
+Logic is the language of mathematics. We use logic to express (and prove!) ideas to another who speaks the language. When written, we aim to leave no doubt about our meaning. Of course, logic can also used to arrive at the correct results.
+
+\begin{boxremark}{}{}
+	A {\bf paradox} is a statement that is both true and false, but can only exist within an inconsistant system of logic (and is not considered a statement within a consistem system of logic). For example, "This statement is false."
+\end{boxremark}
+
+\begin{boxexample}{}{}
+	Here are some examples of logical statements
+	\begin{itemize}
+		\item A triangle has three sides. (a true statement)
+		\item $\sqrt 2$ is a rational number. (a false statement)
+		\item $\pi + 2 \leq 5$. (a true statement)
+	\end{itemize}
+\end{boxexample}
+
+\begin{boxexample}{}{}
+	Here are some examples of not logical statements
+	\begin{itemize}
+		\item Find the smallest natural number. (instruction, not statment)
+		\item Does 3=9? (question, not statement)
+		\item This statement is false. (cannot be true or false)
+	\end{itemize}
+\end{boxexample}
+
+{\bf Simple statements} are "single idea's." They often express compairison, like "is", "equals", "less than", etc. {bf Logical connectors} are the \emph{verbs} of logic, and connect simple statements togeather to form {\bf compound statements}
+
+\begin{boxdefine}{Logical Connector, Simple and Compound Statements}{}
+	A {\bf simple statement} is a "single idea" statement that does not use a {\bf logical connector} like {\bf and}, {\bf or}, {\bf not}, and {\bf implies}.
+	A {\bf compound statement} contains two or more simple statements connected by {\bf logical connectors}.
+\end{boxdefine}
+
+\begin{boxexample}{}{}
+	An example of a {\bf simple statement} is: $a^2=49$. An example of a {\bf compound statement} is: if $a=7$ then $a^2=49$ (also: $a=7 \implies a^2=49$). 
+\end{boxexample}
+
+\section{Logical Connectors}
+
+This is a list of all the logical connectors. They work mostly as you would use them in English. Don't worry, we'll define their exact definition with {\bf truth tables} later.
+
+\begin{tabular}{c|c|c|c}
+	\hline
+	Connector & Symbol & Name & Example\\
+	\hline
+	Not & $\neg$ or $\sim$ & Negative & Not A: $\neg A$\\
+	And & $\land$ or $\cap$ & Conjunction & A and B: $A \land B$\\
+	Or & $\lor$ or $\cup$ & Disjunction & A or B: $A \lor B$\\
+	Implies & $\implies$ & Conditional & If A then B: $A \implies B$\\
+	Iff (If and only if) & $\iff$ & Biconditional & A iff B: $A \iff B$\\
+\hline
+\end{tabular}
+
+Lets define how these resolve using truth tables. The first truth table we will look at is {\bf not}:
+
+\begin{tabular}{c|c}
+	\hline
+	\multicolumn{2}{c}{NOT Truth Table}\\
+	\hline
+	$A$ & $\neg A$\\
+	\hline
+	True & False\\
+	False & True\\
+	\hline
+\end{tabular}
+
+\begin{boxexample}{}{}
+	If $A=\text{True}$, what is $\neg A$? $\neg A=\text{False}$.
+\end{boxexample}
+
+Then we have the AND logical connector. Again, this works how you'd expect in english.
+
+\begin{tabular}{c|c|c}
+	\hline
+	\multicolumn{3}{c}{AND Truth Table}\\
+	\hline
+	$A$ & $B$ & $A \land B$\\
+	\hline
+	True & True & True\\
+	False & True & False\\
+	True & False & False\\
+	False & False & False\\
+	\hline
+\end{tabular}
+
+\begin{boxexample}{}{}
+	If $A=\text{True}$ and $B=\text{False}$, what is $A \land B$? $A \land B = \text{False}$.
+\end{boxexample}
+
+Then the OR logical connector. This one is also works how you'd expect it in english.
+
+\begin{tabular}{c|c|c}
+	\hline
+	\multicolumn{3}{c}{OR Truth Table}\\
+	\hline
+	$A$ & $B$ & $A \lor B$\\
+	\hline
+	True & True & True\\
+	False & True & True\\
+	True & False & True\\
+	False & False & False\\
+	\hline
+\end{tabular}
+
+\begin{boxexample}{}{}
+	If $A=\text{True}$ and $B=\text{False}$, what is $A \lor B$? $A \lor B = \text{True}$.
+\end{boxexample}
+
+Implies works a little differently. You can see implies also written as "if...then" statements. Pay attention to how this truth table works, and try to use it in English.
+
+\begin{tabular}{c|c|c}
+	\hline
+	\multicolumn{3}{c}{Implies Truth Table}\\
+	\hline
+	$A$ & $B$ & $A \implies B$\\
+	\hline
+	True & True & True\\
+	False & True & True\\
+	True & False & False\\
+	False & False & True\\
+	\hline
+\end{tabular}
+
+I'm going to spend some extra time explaining this one with some more examples.
+
+\begin{boxexample}{}{}
+	Consider this example: "If it's raining, then I will bring an unbrella." That means the following statements are also true:
+	\begin{itemize}
+		\item It is raining, so I brought an unbrella.
+		\item It is not raining, but I brought an unbrella.
+		\item It is not raining, so I didn't being an unbrella.
+	\end{itemize}
+	But, the statement "It is raining, but I didn't bring an unbrella", that means the initial statement was a lie.
+\end{boxexample}
+
+\begin{boxexample}{}{}
+	If $A=\text{True}$ and $B=\text{False}$, what is $A \implies B$? $A \implies B = \text{False}$.
+\end{boxexample}
+
+Finally, iff (or if any only if) works simularly to above, but it works both ways.
+
+\begin{tabular}{c|c|c}
+	\hline
+	\multicolumn{3}{c}{Iff Truth Table}\\
+	\hline
+	$A$ & $B$ & $A \iff B$\\
+	\hline
+	True & True & True\\
+	False & True & False\\
+	True & False & False\\
+	False & False & True\\
+	\hline
+\end{tabular}
+
+I will use the same example as above to illistrate the difference.
+
+\begin{boxexample}{}{}
+	Consider this example: "I will bring an unbrella if and only if it is raining." That means the following statements are also true:
+	\begin{itemize}
+		\item It is raining, so I brought an unbrella.
+		\item It is not raining, so I didn't being an unbrella.
+	\end{itemize}
+	But the following statements are false:
+	\begin{itemize}
+		\item It is raining, but I didn't bring an unbrella.
+		\item It is not raining, but I brought an umbrella.
+	\end{itemize}
+\end{boxexample}
+
+\begin{boxexample}{}{}
+	If $A=\text{False}$ and $B=\text{True}$, what is $A \iff B$? $A \iff B = \text{False}$.
+\end{boxexample}
+
