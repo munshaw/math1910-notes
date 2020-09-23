@@ -1,23 +1,26 @@
 \usepackage{libertine}
+
 \usepackage{mathtools}
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{tabu}
+\usepackage{venndiagram}
+
 \usepackage{xcolor}
+
 \usepackage{tcolorbox}
 \tcbuselibrary{breakable}
 \tcbuselibrary{skins}
 \tcbuselibrary{theorems}
-\usepackage{venndiagram}
 
 \newtcbtheorem[number within=chapter]{boxdefine}{Definition}{colback=yellow!5,colframe=yellow!35!black,fonttitle=\bfseries}{th}
 
-\newtcbtheorem[number within=chapter]{boxexample}{Example}{breakable,enhanced jigsaw,colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+\newtcbtheorem[use counter from=boxdefine]{boxexample}{Example}{breakable,enhanced jigsaw,colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
 
-\newtcbtheorem[number within=chapter]{boxproposition}{Proposition}{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
+\newtcbtheorem[use counter from=boxdefine]{boxproposition}{Proposition}{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
 
 
-\newtcbtheorem[number within=chapter]{boxremark}{Remark}{enhanced jigsaw, breakable,colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
+\newtcbtheorem[number within=boxdefine]{boxremark}{Remark}{enhanced jigsaw, breakable,colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
 
 \definecolor{skyblue}{RGB}{125,212,216}
 \newcommand*{\mytitle}[1]
