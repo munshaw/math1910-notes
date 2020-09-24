@@ -2,15 +2,21 @@
 
 Sets can have a finite or infinite number of elements. Beleive it or not, we can still determine wether or not two infinite sets have the same cardinality using the following definition.
 
-\begin{boxdefine}{One-to-one correspondence}{}
-	A {\bf one-to-one correspondence} between sets $A$ and $B$ is a pairing of each object in $A$ with one and only one object in $B$, and each object in $B$ paired with one and only one object in $A$. If such a correspondence exists, than we say $A$ and $B$ are {\bf equivalent}.
+\begin{boxdefine}{One-to-one Correspondence}{}
+	A {\bf one-to-one correspondence} between sets $A$ and $B$ is a pairing of each object in $A$ with one and only one object in $B$, and each object in $B$ paired with one and only one object in $A$. If such a correspondence exists, than we say $A$ and $B$ are {\bf equivalent} (that is $|A|=|B|$).
 \end{boxdefine}
 
 \begin{boxexample}{}{}
 	If $A=\{1,2,3,4,\dots\}$ and $B=\{1,4,9,16,\dots\}$, we can say that the one-to-one correspondence is $a=b^2, a \in A, b \in B$, and the two sets are equivalent.
 \end{boxexample}
 
-We can also determine if one infinite set is a {\bf subset} of another infinite set. If each object in $A$ is paired with one and only one object in $B$, but not the other way around, than we say $A$ is a proper subset of $B$.
+Another good definition to know is when an infinite set is {\bf countable}, though we will not use it much in this class.
+
+\begin{boxdefine}{Countable Set}{}
+	An infinite set is {\bf countable} if it is equivalent to the natural numbers. 
+\end{boxdefine}
+
+We can also determine if one infinite set is a {\bf proper subset} of another infinite set. If each member of $A$ is paired with one and only one member in $B$, but not every member of $B$ is paried with one and only one member of $A$, than we say $A$ is a proper subset of $B$.
 
 \begin{boxexample}{}{}
 	If $A=\{2,3,4,5,\dots\}$ and $B=\{1,2,3,4,5,\dots\}$, than $A$ is a proper subset of $B$, because the one-to-one corresponce $a=b, a \in A, b \in B$
@@ -24,9 +30,9 @@ A {\bf logical statement} is an expression that has a definite state of being ei
 
 Logic is the language of mathematics. We use logic to express (and prove!) ideas to another who speaks the language. When written, we aim to leave no doubt about our meaning. Of course, logic can also used to arrive at the correct results.
 
-\begin{boxremark}{}{}
+\begin{boxremark*}{}{}
 	A {\bf paradox} is a statement that is both true and false, but can only exist within an inconsistant system of logic (and is not considered a statement within a consistem system of logic). For example, "This statement is false."
-\end{boxremark}
+\end{boxremark*}
 
 \begin{boxexample}{}{}
 	Here are some examples of logical statements
@@ -46,10 +52,10 @@ Logic is the language of mathematics. We use logic to express (and prove!) ideas
 	\end{itemize}
 \end{boxexample}
 
-{\bf Simple statements} are "single idea's." They often express compairison, like "is", "equals", "less than", etc. {bf Logical connectors} are the \emph{verbs} of logic, and connect simple statements togeather to form {\bf compound statements}
+{\bf Simple statements} are "single ideas." They often express compairison, like "is", "equals", "less than", etc. They are the \emph{nouns} of logic. {\bf Logical connectors} are the \emph{verbs} of logic, and connect simple statements togeather to form {\bf compound statements}
 
 \begin{boxdefine}{Logical Connector, Simple and Compound Statements}{}
-	A {\bf simple statement} is a "single idea" statement that does not use a {\bf logical connector} like {\bf and}, {\bf or}, {\bf not}, and {\bf implies}.
+	A {\bf simple statement} is a "single idea" statement that does not use a {\bf logical connector} like {\bf and}, {\bf or}, {\bf not}, {\bf implies}, and {\bf iff}.
 	A {\bf compound statement} contains two or more simple statements connected by {\bf logical connectors}.
 \end{boxdefine}
 
@@ -65,13 +71,17 @@ This is a list of all the logical connectors. They work mostly as you would use 
 	\hline
 	Connector & Symbol & Name & Example\\
 	\hline
-	Not & $\neg$ or $\sim$ & Negative & Not A: $\neg A$\\
-	And & $\land$ or $\cap$ & Conjunction & A and B: $A \land B$\\
-	Or & $\lor$ or $\cup$ & Disjunction & A or B: $A \lor B$\\
+	Not & $\neg$ & Negative & Not A: $\neg A$\\
+	And & $\land$ & Conjunction & A and B: $A \land B$\\
+	Or & $\lor$ & Disjunction & A or B: $A \lor B$\\
 	Implies & $\implies$ & Conditional & If A then B: $A \implies B$\\
 	Iff (If and only if) & $\iff$ & Biconditional & A iff B: $A \iff B$\\
 \hline
 \end{tabular}
+
+\begin{boxremark*}{}{}
+	It is \emph{very} uncommon to use the set operations $\cup$ for OR and $\cap$ for AND. Sometimes the negative is written as "$\sim A$".
+\end{boxremark*}
 
 Lets define how these resolve using truth tables. The first truth table we will look at is {\bf not}:
 
@@ -152,7 +162,7 @@ I'm going to spend some extra time explaining this one with some more examples.
 		\item It is not raining, but I brought an unbrella.
 		\item It is not raining, so I didn't being an unbrella.
 	\end{itemize}
-	But, the statement "It is raining, but I didn't bring an unbrella", that means the initial statement was a lie.
+	But, the statement "It is raining, but I didn't bring an unbrella", means that I am lieing.
 \end{boxexample}
 
 \begin{boxexample}{}{}
@@ -182,7 +192,7 @@ I will use the same example as above to illistrate the difference.
 		\item It is raining, so I brought an unbrella.
 		\item It is not raining, so I didn't being an unbrella.
 	\end{itemize}
-	But the following statements are false:
+	But the following statements mean that I am lieing:
 	\begin{itemize}
 		\item It is raining, but I didn't bring an unbrella.
 		\item It is not raining, but I brought an umbrella.
@@ -193,3 +203,8 @@ I will use the same example as above to illistrate the difference.
 	If $A=\text{False}$ and $B=\text{True}$, what is $A \iff B$? $A \iff B = \text{False}$.
 \end{boxexample}
 
+Two important definitions for creating logical statements are {\bf tautologies}, and {\bf contradictions}.
+
+\begin{boxdefine}{Tautology and Contradictions}{}
+	A {\bf tautology} is a statement that is always true. A {\bf contradiction} is a statement that is always false.
+\end{boxdefine}

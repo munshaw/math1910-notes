@@ -7,7 +7,8 @@ We will use {\bf Venn diagrams} to visualise operations between sets. I think th
 \end{venndiagram2sets}
 
 \begin{boxexample}{}{}
-	Suppose $A=\{a,b,c\}$ and $B=\{a,b,x,y\}$, then $A \cap B=\{a,b\}$ is visualised with:\\
+	Suppose $A=\{a,b,c\}$ and $B=\{a,b,x,y\}$, then $A \cap B=\{a,b\}$ is visualised with:
+
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c},labelOnlyB={x,y},labelAB={a,b}]
 		\fillACapB
 	\end{venndiagram2sets}
@@ -20,7 +21,8 @@ This time we will visualise the union of two sets. Again, the coloured area repr
 \end{venndiagram2sets}
 
 \begin{boxexample}{}{}
-	Suppose $A=\{a,b,c\}$ and $B=\{a,b,x,y\}$, then $A \cup B=\{a,b,c,x,y\}$  is visualised with:\\
+	Suppose $A=\{a,b,c\}$ and $B=\{a,b,x,y\}$, then $A \cup B=\{a,b,c,x,y\}$  is visualised with:
+
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c},labelOnlyB={x,y},labelAB={a,b}]
 		\fillA \fillB
 	\end{venndiagram2sets}
@@ -33,7 +35,8 @@ And now we look at the complement of the set. So everything within the \emph{uni
 \end{venndiagram2sets}
 
 \begin{boxexample}{}{}
-	Suppose $A=\{a,b,c\}$ and $\mathcal{U}=\{a,b,c,d,e,f,g,h\}$, then $A^\complement=\{d,e,f,g,h\}$ can be visualised with:\\
+	Suppose $A=\{a,b,c\}$ and $\mathcal{U}=\{a,b,c,d,e,f,g,h\}$, then $A^\complement=\{d,e,f,g,h\}$ can be visualised with:
+
 	\begin{venndiagram2sets}[shade=skyblue,overlap=2.4cm,hgap=2.2cm,vgap=0.5cm,labelNotAB={\;\quad\qquad $\mathcal{U}$ \: $d,e,f,g,h$},labelOnlyA={$a,b,c$},labelB={}]
 		\fillNotA
 	\end{venndiagram2sets}
@@ -45,7 +48,8 @@ And when we have two disjoint sets (two sets that do not share elements). So for
 \end{venndiagram2sets}
 
 \begin{boxexample}{}{}
-	For example, given the two sets $A=\{a,b,c\}$, and $B=\{1,2,3\}$, we can see that they share no elements and are disjoint.\\
+	For example, given the two sets $A=\{a,b,c\}$, and $B=\{1,2,3\}$, we can see that they share no elements and are disjoint.
+
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm,labelOnlyA={a,b,c},labelOnlyB={1,2,3}]
 	\end{venndiagram2sets}
 \end{boxexample}
@@ -57,7 +61,8 @@ Yet again for set difference. $A-B$:
 \end{venndiagram2sets}
 
 \begin{boxexample}{}{}
-	For example, if $A=\{a,b,c,d\}$ and $B=\{c,d\}$, than $A-B=\{c,d\}$.\\
+	For example, if $A=\{a,b,c,d\}$ and $B=\{c,d\}$, than $A-B=\{c,d\}$.
+
 	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelOnlyA={c,d},labelAB={a,b}]
 		\fillOnlyA
 	\end{venndiagram2sets}
@@ -65,55 +70,108 @@ Yet again for set difference. $A-B$:
 
 \section{Applications for Venn Diagrams}
 
+We'll go over some examples of filling out more complicated Venn Diagrams. In general, you can use simpler Venn Diagrams to build more complicated ones. You'll see that in the below examples.
+
 \begin{boxexample}{}{}
-	Suppose we want to visualise $(A \cap B)^\complement \cup B$. Thats a little long so lets break it up. Recall what $A \cap B$ looks like.\\
+	Suppose we want to visualise $(A \cap B)^\complement \cup B$. Thats a little long so lets break it up. Recall what $A \cap B$ looks like.
+
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillACapB
-	\end{venndiagram2sets}\\
-	Now, we'll invert that to get $(A \cap B)^\complement$:\\
+	\end{venndiagram2sets}
+
+	Now, we'll invert that to get $(A \cap B)^\complement$:
+
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillNotAorNotB
-	\end{venndiagram2sets}\\
-	And now lets add $B$. So, $(A \cap B)^\complement \cup B$ is:\\
+	\end{venndiagram2sets}
+
+	And now lets add $B$. So, $(A \cap B)^\complement \cup B$ is:
+
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillAll
-	\end{venndiagram2sets}\\
+	\end{venndiagram2sets}
+
 	And we see that $(A \cap B)^\complement \cup B$ is acutally the universal set $\mathcal{U}$!
 \end{boxexample}
 
 \begin{boxexample}{}{}
-	Let's try another one. $(A \cap B) \cup (A \cup B^\complement)^\complement$. Again, let's break this down. $A \cap B$ is simple enough.\\
+	Let's try another one. $(A \cap B) \cup (A \cup B^\complement)^\complement$. Again, let's break this down. $A \cap B$ is simple enough.
+
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillACapB
-	\end{venndiagram2sets}\\
+	\end{venndiagram2sets}
+
 	The next one is $A \cup B^\complement$, a little bit more tricky. That can be read as the area of A, plus the area of not B. Think about it for a bit, its a logic puzzle.
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillA \fillNotAorB
-	\end{venndiagram2sets}\\
-	We take the complement of above (inverting it) to get $(A \cup B^\complement)^\complement$:\\
+	\end{venndiagram2sets}
+
+	We take the complement of above (inverting it) to get $(A \cup B^\complement)^\complement$:
+
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillOnlyB
-	\end{venndiagram2sets}\\
-	And now we glue them together to get to get our union $(A \cap B) \cup (A \cup B^\complement)^\complement$:\\
+	\end{venndiagram2sets}
+
+	And now we glue them together to get to get our union $(A \cap B) \cup (A \cup B^\complement)^\complement$:
+
 	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 		\fillB
-	\end{venndiagram2sets}\\
+	\end{venndiagram2sets}
+
 	From this digram, we can see there is another way of writting $(A \cap B) \cup (A \cup B^\complement)^\complement$. It's just the set $B$!
 \end{boxexample}
 
 \section{Applications for Sets}
 
+Now we'll look at how sets and Venn Diagrams can be used to solve problems. In this class, we solve these intuitively. Algebra is another way to solve these problem though.
+
+\begin{boxexample}{}{}
+	Suppose we surveyed 25 farms. 18 farms had potatoes, and 12 farms had corn. How many farms grow both potatoes and corn?\\
+
+	If we add the number of farms with potatoes to the number of farms with corn, then the farms that grow both will be counted twice. In other words,
+
+	\[
+		|P|+|C|=|P \cup C| + |P \cap C|
+	\]
+
+	Now, if we slightly rearrange this equation, we get
+
+	\[
+		|P|+|C| - |P \cup C|=|P \cap C|
+	\]
+
+	So, we can find the intercept by plugging in the values that we know.
+
+	\[
+		18+12-25=|P \cap C| \implies |P \cap C|=5
+	\]
+
+	Our answer is 5, and this is our Venn Diagram:
+
+	\begin{venndiagram2sets}[shade=skyblue,showframe=false,labelA={P},labelB={C},labelOnlyA={13},labelOnlyB={7},labelAB={5}]
+		\fillACapB
+	\end{venndiagram2sets}
+
+\end{boxexample}
+
 \begin{boxexample}{}{}
 	Suppose 150 children were surveyed. It was found that 35 played hockey, 71 played baseball, 30 played soccer, 10 played all three, 3 played only soccer, 17 played only hockey, 6 played only soccer and hockey, 48 played only baseball, and 53 played no sports.\\
-	First, lets draw the Venn Diagram. Start by drawing the three sets.\\
+
+	First, lets draw the Venn Diagram. Start by drawing the three sets.
+
 	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={$\mathcal{U}$}]
-	\end{venndiagram3sets}\\
-	Now, let's fill some of this in. Since 53 didn't play anything, they are outside of the three sets. 3 Played only soccer, 17 played only hockey and 48 played only baseball. 10 Played all three, and 6 played only soccer and hockey. So we have:\\
+	\end{venndiagram3sets}
+
+	Now, let's fill some of this in. Since 53 didn't play anything, they are outside of the three sets. 3 Played only soccer, 17 played only hockey and 48 played only baseball. 10 Played all three, and 6 played only soccer and hockey. So we have:
+
 	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={\quad $\mathcal{U} \quad 53$},labelOnlyA={17},labelOnlyB={48},labelOnlyC={3},labelABC={10},labelOnlyAC={6}]
-	\end{venndiagram3sets}\\
-	We'll fill in some more intersections now. How many played only hockey and baseball? There are 35 hockey players, take away 17 who played only hockey, take away 10 who played all three, and take away 6 who played hockey and soccer. So $35-17-10-6=2$. How many played only soccer and baseball? 71 baseball players, take away 48 who played baseball only, take away 10 who played all three, take away 2 who played hockey and baseball. So, $71-48-10-2=11$. The diagram looks like:\\
+	\end{venndiagram3sets}
+
+	We'll fill in some more intersections now. How many played only hockey and baseball? There are 35 hockey players, take away 17 who played only hockey, take away 10 who played all three, and take away 6 who played hockey and soccer. So $35-17-10-6=2$. How many played only soccer and baseball? 71 baseball players, take away 48 who played baseball only, take away 10 who played all three, take away 2 who played hockey and baseball. So, $71-48-10-2=11$. The diagram looks like:
+
 	\begin{venndiagram3sets}[shade=skyblue,labelA={H},labelB={B},labelC={S},labelNotABC={\quad $\mathcal{U} \quad 53$},labelOnlyA={17},labelOnlyB={48},labelOnlyC={3},labelABC={10},labelOnlyAB={2},labelOnlyBC={11},labelOnlyAC={6}]
-	\end{venndiagram3sets}\\
+	\end{venndiagram3sets}
+
 	Now we can use this to answer some questions.
 	\begin{enumerate}
 		\item How many played soccer and baseball only? $11$
@@ -128,7 +186,8 @@ Yet again for set difference. $A-B$:
 \end{boxexample}
 
 \begin{boxexample}{}{}
-	Fourty students who play board games was surveyed.\\
+	Fourty students who play board games was surveyed.
+
 	\begin{tabular}{r|l}
 		\hline
 		Number of students & Game(s) played\\
@@ -142,16 +201,25 @@ Yet again for set difference. $A-B$:
 		\hline
 		\multicolumn{2}{c}{40 Total}\\
 		\hline
-	\end{tabular}\\
-	We begin by drawing our Venn diagram. We are given the Chess \& Carrom \& Scrabble intersection as $4$. We can use that to find our Chess \& Scrabble only ($7-4=3$) and Scrabble \& Charrom only ($12-4=8$) intersections. Finally, we can calculate our scrabble-only section ($20-3-4-8=5$).\\
+	\end{tabular}
+
+	What is the number of people who play both Chess \& Carrom? What is the number of people who play Chess and Carrom but not Scrabble?\\
+
+	We begin by drawing our Venn diagram. We are given the Chess \& Carrom \& Scrabble intersection as $4$. We can use that to find our Chess \& Scrabble only ($7-4=3$) and Scrabble \& Charrom only ($12-4=8$) intersections. Finally, we can calculate our scrabble-only section ($20-3-4-8=5$).
+
 	\begin{venndiagram3sets}[shade=skyblue,showframe=false,labelA={Chess},labelB={Scrabble},labelC={Carrom},labelABC={4},labelOnlyAB={3},labelOnlyBC={8},labelOnlyB={5}]
-	\end{venndiagram3sets}\\
-	Now it gets tricky. Consider the following highlighted section ($\text{Chess} \cup \text{Carrom} - \text{Scrabble}$):\\
+	\end{venndiagram3sets}
+
+	Now it gets slightly more tricky. Consider the following highlighted section ($\text{Chess} \cup \text{Carrom}$):
+
 	\begin{venndiagram3sets}[shade=skyblue,showframe=false,labelA={Chess},labelB={Scrabble},labelC={Carrom},labelABC={4},labelOnlyAB={3},labelOnlyBC={8},labelOnlyB={5}]
-		\fillOnlyA \fillOnlyC \fillACapCNotB
-	\end{venndiagram3sets}\\
-	There must be $40-20=20$ students in there. We know that $27-8-4=15$ of them play Carrom, and that $18-4-3=11$ of them play chess. So the Chess \& Carrom only intersection must be $15+11-20=6$. Thus the chess-only section is $11-6=5$, and the carrom-only section is $15-6=9$.\\
+		\fillA \fillC
+	\end{venndiagram3sets}
+
+	There must be $40-5=35$ students in there. We know that $27$ of them play Carrom, and that $18$ of them play chess. So the Chess \& Carrom intersection must be $27+18-35=10$, and the Chess \& Carrom intersection is $10-4=5$. Thus the chess-only section is $18-6-4-3=5$, and the carrom-only section is $27-6-4-8=9$.
+
 	\begin{venndiagram3sets}[shade=skyblue,showframe=false,labelA={Chess},labelB={Scrabble},labelC={Carrom},labelABC={4},labelOnlyAB={3},labelOnlyBC={8},labelOnlyB={5},labelOnlyAC={6},labelOnlyA={5},labelOnlyC={9}]
-	\end{venndiagram3sets}\\
+	\end{venndiagram3sets}
+
 	The number of people who play both Chess \& Carrom is $6+4=10$, and the number of people who play Chess and Carrom but not Scrabble is $6$.
 \end{boxexample}

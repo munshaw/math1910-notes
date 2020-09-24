@@ -32,12 +32,16 @@ I think the first two are fairly self explanitory, so lets break down builder no
 
 \begin{itemize}
 	\item The first term, "$2n+1$", defines the elements in the set. Note that $n$ is variable.
-	\item The symbol "$:$" (or $|$) mean "such that", and signals we are doing something with $n$.
+	\item The symbol "$:$" mean "such that", and signals we are doing something with $n$.
 	\item The symbol $\in$ means "is an element of". "$n \in \mathbb{Z}$" means that $n$ is an integer.
 	\item $\mathbb{Z}$ is the symbol for the set of integers ($\{\dots,-2,-1,0,1,2,3,\dots\}$).
 \end{itemize}
 
 So, this reads as "the set of numbers $2n+1$, where $n$ is an integer." This also known as the set of odd numbers. Take your time to understand reading this, you will see this notation a lot.
+
+\begin{boxremark*}{Notation}{}
+	The such-that symbol "$:$" can also be written as "$|$" or "$\ni$".
+\end{boxremark*}
 
 \begin{boxexample}{}{}
 	Here are a few examples of set-builder notation.
@@ -54,25 +58,29 @@ So, this reads as "the set of numbers $2n+1$, where $n$ is an integer." This als
 Here are some terms and definitions you might run into. The rational number definition looks scary, but try to understand it piece-by-piece.
 
 \begin{tabular}{c|c|c}
-\hline
-Symbol & Name & Definition\\
-\hline
-$\phi$ or $\{\}$ & Null Set & The set with no elements\\
- & Singleton Set & A set with one element\\
- & Finite Set & A set with finite elements\\
- & Infinite Set & A set with infinite elements\\
-$\mathbb{N}$ & Natural Numbers & $\{1,2,3,\dots\}$\\
-$\mathbb{W}$ & Whole Numbers & $\{0,1,2,3,\dots\}$\\
-$\mathbb{Z}$ & Integers & $\{\dots, -2, -1, 0, 1, 2, \dots\}$\\
-$\mathbb{Q}$ & Rational Numbers &
-$\displaystyle \bigg\{ \frac{p}{q} : p \in \mathbb{Z}, q \in \mathbb{Z}, q \neq 0 \bigg\}$\\
-$\mathbb{R}$ & Real Numbers & The set of all points on the number line\\
-$\mathbb{R}-\mathbb{Q}$ & Irrational Numbers & Real numbers that are not rational, like $\pi$\\
-$\mathbb{C}$ & Complex Numbers & $\{a+bi : a \in \mathbb{Z}, b \in \mathbb{Z}\}$\\
-\hline
+	\hline
+	Symbol & Name & Definition\\
+	\hline
+	$\phi$ & Null Set & The set with no elements\\
+	 & Singleton Set & A set with one element\\
+	 & Finite Set & A set with finite elements\\
+	 & Infinite Set & A set with infinite elements\\
+	$\mathbb{N}$ & Natural Numbers & $\{1,2,3,\dots\}$\\
+	$\mathbb{W}$ & Whole Numbers & $\{0,1,2,3,\dots\}$\\
+	$\mathbb{Z}$ & Integers & $\{\dots, -2, -1, 0, 1, 2, \dots\}$\\
+	$\mathbb{Q}$ & Rational Numbers &
+	$\displaystyle \bigg\{ \frac{p}{q} : p \in \mathbb{Z}, q \in \mathbb{Z}, q \neq 0 \bigg\}$\\
+	$\mathbb{R}$ & Real Numbers & The set of all points on the number line\\
+	$\mathbb{R}\setminus\mathbb{Q}$ & Irrational Numbers & Real numbers that are not rational, like $\pi$\\
+	$\mathbb{C}$ & Complex Numbers & $\{a+b\mathrm{i} : a \in \mathbb{Z}, b \in \mathbb{Z}\}$\\
+	\hline
 \end{tabular}
 
-\begin{boxremark}{Imaginary Numbers}{}
+\begin{boxremark*}{Notation}{}
+	The null set symbol "$\phi$" can also be written as "$\{\}$".
+\end{boxremark*}
+
+\begin{boxremark*}{Imaginary Numbers}{}
 	Just to let you know, {\bf this is completely optional!} I don't think we'll encounter complex numbers in this course. But they're included in the official notes, for some reason. If you're wondering what they are, than good for you! Here's an example. Solve the following system for $y \in \mathbb{R}$:
 
 	\begin{align*}
@@ -86,28 +94,28 @@ $\mathbb{C}$ & Complex Numbers & $\{a+bi : a \in \mathbb{Z}, b \in \mathbb{Z}\}$
 		\implies x-4=\pm\sqrt{-36}\\
 	\end{align*}
 
-	But it is impossible to take the square root of a negative number! Does that mean this system is \emph{unsolveable}? Trust me for a moment here, we will get a \emph{real} answer. Suppose we define the imaginary unit $\bf{i} = \sqrt{-1}$ (and $i^2=-1$). Then we have
+	But it is impossible to take the square root of a negative number! Does that mean this system is \emph{unsolveable}? Trust me for a moment here, we will get a \emph{real} answer. Suppose we define the imaginary unit $\mathrm{i} = \sqrt{-1}$ (and $\mathrm{i}^2=-1$). Then we have
 
 	\begin{align*}
 		x-4=\pm\sqrt{-36}\\
 		\implies x-4=\pm6\sqrt{-1}\\
-		\implies x-4=\pm6i\\
-		\implies x=4\pm6i\\
+		\implies x-4=\pm6\mathrm{i}\\
+		\implies x=4\pm6\mathrm{i}\\
 	\end{align*}
 
 	Now we have two complex values for $x$! Substitute $x$ into the second equation to get $y$.
 
 	\begin{align*}
 		y=\frac{x^2}{2}-4x\\
-		=\frac{(4\pm6i)^2}{2}-4(4\pm6i)\\
-		=\frac{16\pm48i+36i^2}{2}-16\mp24i\\
-		=8\pm24i+18i^2-16\mp24i\\
-		=18i^2-8\\
+		=\frac{(4\pm6\mathrm{i})^2}{2}-4(4\pm6\mathrm{i})\\
+		=\frac{16\pm48\mathrm{i}+36\mathrm{i}^2}{2}-16\mp24\mathrm{i}\\
+		=8\pm24\mathrm{i}+18\mathrm{i}^2-16\mp24\mathrm{i}\\
+		=18\mathrm{i}^2-8\\
 		=-18-8=-26\\
 	\end{align*}
 
 	Even though $x$ has two posible complex values, we managed to get one real solution for $y$! There is no physical interpretation for imaginary numbers, but we sometimes see them when we break physical phenomenon into systems of equations. If you've reached this far, than congrats for learning complex numbers!
-\end{boxremark}
+\end{boxremark*}
 
 \section{Compairing Sets}
 
@@ -116,6 +124,10 @@ There are multiple ways to compair sets. We can check their {\bf cardinality} (n
 \begin{boxdefine}{Cardinality}{}
 	The number of elements in a finite set $S$ is called the {\bf cardinality} of $S$, denoted by $|S|$ or $n(S)$.
 \end{boxdefine}
+
+\begin{boxremark*}{Notation}{}
+	The cardinality of set $S$ is also denoted by $n(S)$.
+\end{boxremark*}
 
 \begin{boxexample}{}{}
 	$|\{ n \;:\; n \leq 5, n \in \mathbb{W}\}| = |\{0,1,2,3,4,5\}| = 6$
@@ -194,12 +206,16 @@ The {\bf compliment} of a set is "everything that's not in the set". Since we ca
 \end{boxexample}
 
 \begin{boxdefine}{Complement}{}
-	The {\bf compliment} of a set $S$, written as $S^\complement$ (or $\overline{S}$), is the set of all elements in $\mathcal{U}$ but not in $S$. It can be written as
+	The {\bf compliment} of a set $S$, written as $S^\complement$, is the set of all elements in $\mathcal{U}$ but not in $S$. It can be written as
 
 	\[
 		S^\complement = \{x \;:\; \in \mathcal{U}, x \notin S\}
 	\]
 \end{boxdefine}
+
+\begin{boxremark*}{}{}
+	The complement of a set can also be written as $\overline{S}$ or $S'$
+\end{boxremark*}
 
 \begin{boxexample}{}{}
 	On a six-sided die, what is the compliment of the even sides $\{2,4,6\}$? Answer: the odd sides $\{1,3,5\}$.
@@ -234,13 +250,17 @@ If the sets $A$ and $B$ are disjoint ($A \cap B = \phi$), we call their union ($
 \end{boxexample}
 
 \begin{boxdefine}{Set-Difference}{}
-	The {\bf set-difference} of two sets $S$ and $T$, denoted by $S-T$ (or $S \setminus T$), is the set of all elements belonging to $S$, but not $T$. We can define it as
+	The {\bf set-difference} of two sets $S$ and $T$, denoted by $S \setminus T$, is the set of all elements belonging to $S$, but not $T$. We can define it as
 
 	\[
-		S-T = \{x : x \in S \;\text{AND}\; x \notin T\} = \{x : x \in S \land x \notin T\}
+		S \setminus T = \{x : x \in S \;\text{AND}\; x \notin T\} = \{x : x \in S \land x \notin T\}
 	\]
 \end{boxdefine}
 
+\begin{boxremark*}{}{}
+	The set different symbol "$S \setminus T$" is also written as "$S-T$".
+\end{boxremark*}
+
 \begin{boxexample}{}{}
-	$\{1,2,3\} - \{3\} = \{1,2\}$.
+	$\{1,2,3\} \setminus \{3\} = \{1,2\}$.
 \end{boxexample}
