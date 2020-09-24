@@ -13,14 +13,13 @@
 \tcbuselibrary{skins}
 \tcbuselibrary{theorems}
 
-\newtcbtheorem[number within=chapter]{boxdefine}{Definition}{colback=yellow!5,colframe=yellow!35!black,fonttitle=\bfseries}{th}
+\newtcbtheorem[number within=section]{boxdefine}{Definition}{toptitle=1mm,top=0mm,arc=0mm,coltitle=orange!60!yellow!70!black!110,colback=yellow!15,colframe=yellow!15,fonttitle=\bfseries}{th}
 
-\newtcbtheorem[use counter from=boxdefine]{boxexample}{Example}{breakable,enhanced jigsaw,colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+\newtcbtheorem[use counter from=boxdefine]{boxexample}{Example}{toptitle=1mm,top=0mm,arc=0mm,coltitle=green!40!black,breakable,enhanced jigsaw,colback=green!10,colframe=green!10,fonttitle=\bfseries}{th}
 
-\newtcbtheorem[use counter from=boxdefine]{boxproposition}{Proposition}{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
+\newtcbtheorem[use counter from=boxdefine]{boxproposition}{Proposition}{toptitle=1mm,top=0mm,arc=0mm,coltitle=blue!50!black!70,colback=blue!5,colframe=blue!5,fonttitle=\bfseries}{th}
 
-
-\newtcbtheorem[number within=boxdefine]{boxremark}{Remark}{enhanced jigsaw, breakable,colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
+\newtcbtheorem[number within=boxdefine]{boxremark}{Remark}{toptitle=1mm,top=0mm,arc=0mm,coltitle=red!40!black!80,enhanced jigsaw, breakable,colback=red!5,colframe=red!5,fonttitle=\bfseries}{th}
 
 \definecolor{skyblue}{RGB}{125,212,216}
 \newcommand*{\mytitle}[1]
