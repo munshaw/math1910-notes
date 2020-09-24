@@ -52,39 +52,31 @@ Logic is the language of mathematics. We use logic to express (and prove!) ideas
 	\end{itemize}
 \end{boxexample}
 
-{\bf Simple statements} are "single ideas." They often express compairison, like "is", "equals", "less than", etc. They are the \emph{nouns} of logic. {\bf Logical connectors} are the \emph{verbs} of logic, and connect simple statements togeather to form {\bf compound statements}
-
-\begin{boxdefine}{Logical Connector, Simple \& Compound Statements}{}
-	A {\bf simple statement} is a "single idea" statement that does not use a {\bf logical connector} like "and", "or", "not", "implies", and "iff".
-	A {\bf compound statement} contains two or more simple statements connected by {\bf logical connectors}.
-\end{boxdefine}
-
-\begin{boxexample}{}{}
-	An example of a {\bf simple statement} is: $a^2=49$. An example of a {\bf compound statement} is: if $a=7$ then $a^2=49$ (also: $a=7 \implies a^2=49$). 
-\end{boxexample}
-
 \section{Logical Connectors}
 
-This is a list of all the logical connectors. They work mostly as you would use them in English. Don't worry, we'll define their exact definition with {\bf truth tables} later.
+This is a list of the logical connectors. They work as you would use them in English.
 
-\begin{tabular}{c|c|c|c}
+\medskip
+\begin{tabular}{r|c|c|l}
 	\hline
 	Connector & Symbol & Name & Example\\
 	\hline
-	Not & $\neg$ & Negative & Not A: $\neg A$\\
-	And & $\land$ & Conjunction & A and B: $A \land B$\\
-	Or & $\lor$ & Disjunction & A or B: $A \lor B$\\
-	Implies & $\implies$ & Conditional & If A then B: $A \implies B$\\
-	Iff (If and only if) & $\iff$ & Biconditional & A iff B: $A \iff B$\\
+	Not & $\neg$ & Negative & $\neg \text{False} = \text{True}$\\
+	And & $\land$ & Conjunction & $\text{True} \land \text{True} = \text{True} $\\
+	Or & $\lor$ & Disjunction & $\text{True} \lor \text{False} = \text{True}$\\
+	Implies (If...Then) & $\implies$ & Conditional & $\text{True} \implies \text{True} = \text{True}$\\
+	Iff (If and only if) & $\iff$ & Biconditional & $\text{True} \iff \text{False} = \text{False}$\\
 \hline
 \end{tabular}
+\medskip
 
 \begin{boxnotation*}{}{}
-	It is \emph{very} uncommon to use the set operations $\cup$ for OR and $\cap$ for AND. Sometimes the negative is written as "$\sim A$".
+	It is \emph{very} uncommon to use the set operations $\cup$ for OR and $\cap$ for AND, but the instructor sometimes uses these. The negative is sometimes written as "$\sim A$".
 \end{boxnotation*}
 
 Lets define how these resolve using truth tables. The first truth table we will look at is {\bf not}:
 
+\medskip
 \begin{tabular}{c|c}
 	\hline
 	\multicolumn{2}{c}{NOT Truth Table}\\
@@ -95,13 +87,17 @@ Lets define how these resolve using truth tables. The first truth table we will 
 	False & True\\
 	\hline
 \end{tabular}
+\medskip
 
 \begin{boxexample}{}{}
-	If $A=\text{True}$, what is $\neg A$? $\neg A=\text{False}$.
+	If $A=\text{True}$, what is $\neg A$?
+	
+	$\neg A=\text{False}$.
 \end{boxexample}
 
 Then we have the AND logical connector. Again, this works how you'd expect in english.
 
+\medskip
 \begin{tabular}{c|c|c}
 	\hline
 	\multicolumn{3}{c}{AND Truth Table}\\
@@ -114,13 +110,17 @@ Then we have the AND logical connector. Again, this works how you'd expect in en
 	False & False & False\\
 	\hline
 \end{tabular}
+\medskip
 
 \begin{boxexample}{}{}
-	If $A=\text{True}$ and $B=\text{False}$, what is $A \land B$? $A \land B = \text{False}$.
+	If $A=\text{True}$ and $B=\text{False}$, what is $A \land B$?
+	
+	$A \land B = \text{False}$.
 \end{boxexample}
 
 Then the OR logical connector. This one is also works how you'd expect it in english.
 
+\medskip
 \begin{tabular}{c|c|c}
 	\hline
 	\multicolumn{3}{c}{OR Truth Table}\\
@@ -133,13 +133,17 @@ Then the OR logical connector. This one is also works how you'd expect it in eng
 	False & False & False\\
 	\hline
 \end{tabular}
+\medskip
 
 \begin{boxexample}{}{}
-	If $A=\text{True}$ and $B=\text{False}$, what is $A \lor B$? $A \lor B = \text{True}$.
+	If $A=\text{True}$ and $B=\text{False}$, what is $A \lor B$?
+	
+	$A \lor B = \text{True}$.
 \end{boxexample}
 
 Implies works a little differently. You can see implies also written as "if...then" statements. Pay attention to how this truth table works, and try to use it in English.
 
+\medskip
 \begin{tabular}{c|c|c}
 	\hline
 	\multicolumn{3}{c}{Implies Truth Table}\\
@@ -152,6 +156,7 @@ Implies works a little differently. You can see implies also written as "if...th
 	False & False & True\\
 	\hline
 \end{tabular}
+\medskip
 
 I'm going to spend some extra time explaining this one with some more examples.
 
@@ -166,11 +171,14 @@ I'm going to spend some extra time explaining this one with some more examples.
 \end{boxexample}
 
 \begin{boxexample}{}{}
-	If $A=\text{True}$ and $B=\text{False}$, what is $A \implies B$? $A \implies B = \text{False}$.
+	If $A=\text{True}$ and $B=\text{False}$, what is $A \implies B$?
+	
+	$A \implies B = \text{False}$.
 \end{boxexample}
 
 Finally, iff (or if any only if) works simularly to above, but it works both ways.
 
+\medskip
 \begin{tabular}{c|c|c}
 	\hline
 	\multicolumn{3}{c}{Iff Truth Table}\\
@@ -183,6 +191,7 @@ Finally, iff (or if any only if) works simularly to above, but it works both way
 	False & False & True\\
 	\hline
 \end{tabular}
+\medskip
 
 I will use the same example as above to illistrate the difference.
 
@@ -200,7 +209,20 @@ I will use the same example as above to illistrate the difference.
 \end{boxexample}
 
 \begin{boxexample}{}{}
-	If $A=\text{False}$ and $B=\text{True}$, what is $A \iff B$? $A \iff B = \text{False}$.
+	If $A=\text{False}$ and $B=\text{True}$, what is $A \iff B$?
+	
+	$A \iff B = \text{False}$.
+\end{boxexample}
+
+{\bf Simple statements} are "single ideas." They often express compairison, like "is", "equals", "less than", etc. They are the \emph{nouns} of logic. {\bf Logical connectors} are the \emph{verbs} of logic, and connect simple statements togeather to form {\bf compound statements}
+
+\begin{boxdefine}{Logical Connector, Simple \& Compound Statements}{}
+	A {\bf simple statement} is a "single idea" statement that does not use a {\bf logical connector} like "and", "or", "not", "implies", and "iff".
+	A {\bf compound statement} contains two or more simple statements connected by {\bf logical connectors}.
+\end{boxdefine}
+
+\begin{boxexample}{}{}
+	An example of a {\bf simple statement} is: $a^2=49$. An example of a {\bf compound statement} is: if $a=7$ then $a^2=49$ (also: $a=7 \implies a^2=49$). 
 \end{boxexample}
 
 Two important definitions for creating logical statements are {\bf tautologies}, and {\bf contradictions}.
