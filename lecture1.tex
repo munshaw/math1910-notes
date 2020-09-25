@@ -21,7 +21,7 @@ Elements in sets must be well-defined, unordered, and distinct. You may \emph{de
 There are three ways that a set can be described.
 
 \begin{enumerate}
-	\item A written description. For example, "The set of even negative numbers."
+	\item A written description. For example, \say{The set of even negative numbers.}
 	\item A list (also called roster method/tabular form). For example, $S = \{2,3,5,7\}$.
 	\item Set-builder notation (or rule notation). For example, $P = \{2n+1\;:\;n \in \mathbb{Z}\}$.
 \end{enumerate}
@@ -31,16 +31,16 @@ There are three ways that a set can be described.
 I think the first two are fairly self explanitory, so lets break down builder notation. Consider $P = \{2n+1\;:\;n \in \mathbb{Z}\}$.
 
 \begin{itemize}
-	\item The first term, "$2n+1$", defines the elements in the set. Note that $n$ is variable.
-	\item The symbol "$:$" mean "such that", and signals we are doing something with $n$.
-	\item The symbol $\in$ means "is an element of". "$n \in \mathbb{Z}$" means that $n$ is an integer.
+	\item The first term, \say{$2n+1$}, defines the elements in the set. Note that $n$ is variable.
+	\item The symbol \say{$:$} mean \say{such that}, and signals we are doing something with $n$.
+	\item The symbol $\in$ means \say{is an element of}. \say{$n \in \mathbb{Z}$} means that $n$ is an integer.
 	\item $\mathbb{Z}$ is the symbol for the set of integers ($\{\dots,-2,-1,0,1,2,3,\dots\}$).
 \end{itemize}
 
-So, this reads as "the set of numbers $2n+1$, where $n$ is an integer." This also known as the set of odd numbers. Take your time to understand reading this, you will see this notation a lot.
+So, this reads as \say{the set of numbers $2n+1$, where $n$ is an integer.} This also known as the set of odd numbers. Take your time to understand reading this, you will see this notation a lot.
 
 \begin{boxnotation*}{}{}
-	The such-that symbol "$:$" can also be written as "$|$" or "$\ni$".
+	The such-that symbol \say{$:$} can also be written as \say{$|$} or \say{$\ni$}.
 \end{boxnotation*}
 
 \begin{boxexample}{}{}
@@ -62,7 +62,7 @@ Here are some terms and definitions you might run into. The rational number defi
 	\hline
 	Symbol & Name & Definition\\
 	\hline
-	$\phi$ & Null Set & The set with no elements\\
+	$\varnothing$ & Null Set & The set with no elements\\
 	 & Singleton Set & A set with one element\\
 	 & Finite Set & A set with finite elements\\
 	 & Infinite Set & A set with infinite elements\\
@@ -79,11 +79,11 @@ Here are some terms and definitions you might run into. The rational number defi
 \medskip
 
 \begin{boxnotation*}{}{}
-	The null set symbol "$\phi$" can also be written as "$\{\}$".
+	The null set can also be written as \say{$\{\}$}.
 \end{boxnotation*}
 
 \begin{boxremark*}{Imaginary Numbers}{}
-	Just to let you know, {\bf this is completely optional!} I don't think we'll encounter complex numbers in this course. But they're included in the official notes, for some reason. If you're wondering what they are, than good for you! Here's an example. Solve the following system for $y \in \mathbb{R}$:
+	{\bf This is completely optional!} I don't think we'll encounter complex numbers in this course. But they're included in the official notes, for some reason. If you're wondering what they are, than good for you! Here's an example. Solve the following system for $y \in \mathbb{R}$:
 
 	\begin{align*}
 		(x-4)^2+36=0\\
@@ -121,10 +121,10 @@ Here are some terms and definitions you might run into. The rational number defi
 
 \section{Compairing Sets}
 
-There are multiple ways to compair sets. We can check their {\bf cardinality} (number of elements), or we can check if they're {\bf equivalent} or {\bf equal}.
+There are multiple ways to compair sets. We can look at their {\bf cardinality} (number of elements), or we can check if they're {\bf equivalent} (same size) or {\bf equal} (same elements).
 
 \begin{boxdefine}{Cardinality}{}
-	The number of elements in a finite set $S$ is called the {\bf cardinality} of $S$, denoted by $|S|$ or $n(S)$.
+	The number of elements in a finite set $S$ is called the {\bf cardinality} of $S$, denoted by $|S|$.
 \end{boxdefine}
 
 \begin{boxnotation*}{}{}
@@ -150,10 +150,10 @@ There are multiple ways to compair sets. We can check their {\bf cardinality} (n
 \end{boxdefine}
 
 \begin{boxexample}{}{}
-	$\{1,2,3\} = \{3,2,1\}$, but $\{1,2,3\} \ne \{1,2\} \ne \{1,2,5\}$.
+	$\{1,2,3\} = \{3,2,1\}$, but $\{1,2,3\} \ne \{1,2,5\} \ne \{1,2\}$.
 \end{boxexample}
 
-We can also check to see if a set is a {\bf subset} of another. For example, the even numbers are a subset of the integers. {\bf Proper subsets} are simular, except that they must have less elements than the set it comes from. When sets share no elements, they are called {\bf disjoint}.
+We can also check to see if a set is a {\bf subset} of another. For example, the even numbers are a subset of the integers. {\bf Proper subsets} are simular, except that they strictly have less elements than the other set. When sets share no elements, they are called {\bf disjoint}.
 
 \begin{boxdefine}{Subset}{}
 	A set $S$ is called a {\bf subset} of a set $T$, written as $S \subseteq T$, when every element of $S$ belongs to $T$.
@@ -174,7 +174,7 @@ We can also check to see if a set is a {\bf subset} of another. For example, the
 The {\bf superset} and {\bf proper superset} are the opposite definition. For example, if $A \subset B$, then $B \supset A$.
 
 \begin{boxdefine}{Disjoint}{}
-	Two sets are {\bf disjoint} when they do not share any elements, ie $S \cap T=\phi$.
+	Two sets are {\bf disjoint} when they do not share any elements, ie $S \cap T=\varnothing$.
 \end{boxdefine}
 
 \begin{boxexample}{}{}
@@ -197,7 +197,7 @@ Operations are used to transform existing sets into news sets.  The first operat
 	If $A=\{a,b\}$, than $\text{P}(A) = \{\phi,\{a\},\{b\},\{a,b\}\}$. The cardinality of $\text{P}(A)$ is $2^{2}=4$.
 \end{boxexample}
 
-The {\bf compliment} of a set is "everything that's not in the set". Since we cannot literally put "everything" into a set, we first define what {\bf universe} we're in. 
+The {\bf compliment} of a set is \say{everything that's not in the set}. Since we cannot literally put \say{everything} into a set, we first define what {\bf universe} we're in. 
 
 \begin{boxdefine}{Universe of Discourse}{}
 	The {\bf universe of discourse} (or {\bf universal set}) contains all of the objects we might encounter in a given situation, denoted by $\mathcal{U}$.
@@ -239,7 +239,7 @@ Finally, lets talk about what we can do with two sets. We can combine them with 
 
 If the sets $A$ and $B$ are disjoint ($A \cap B = \phi$), we call their union ($A \cup B$) a {\bf disjoint union}.
 
-\begin{boxdefine}{Union}{}
+\begin{boxdefine}{Intersection}{}
 	The {\bf intersection} of two sets $S$ and $T$, denoted by $S\cap T$, is the set of all elements belonging to both set $S$ and set $T$. We can define it as
 
 	\[
@@ -260,7 +260,7 @@ If the sets $A$ and $B$ are disjoint ($A \cap B = \phi$), we call their union ($
 \end{boxdefine}
 
 \begin{boxnotation*}{}{}
-	The set different symbol "$S \setminus T$" is also written as "$S-T$".
+	The set different symbol \say{$S \setminus T$} is also written as \say{$S-T$}.
 \end{boxnotation*}
 
 \begin{boxexample}{}{}

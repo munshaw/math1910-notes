@@ -1,25 +1,35 @@
 \chapter{Set Theory 3}
 
+This was an extrememly breif section, so I included everything thats worth mentioning here. So this is a little more in-depth than we need.
+
 Sets can have a finite or infinite number of elements. Beleive it or not, we can still determine wether or not two infinite sets have the same cardinality using the following definition.
 
-\begin{boxdefine}{One-to-one Correspondence}{}
-	A {\bf one-to-one correspondence} between sets $A$ and $B$ is a pairing of each object in $A$ with one and only one object in $B$, and each object in $B$ paired with one and only one object in $A$. If such a correspondence exists, than we say $A$ and $B$ are {\bf equivalent} (that is $|A|=|B|$).
+\begin{boxdefine}{Equipotent}{}
+	A {\bf one-to-one correspondence} between sets $A$ and $B$ is a pairing of each object in $A$ with one and only one object in $B$, and each object in $B$ paired with one and only one object in $A$. If such a correspondence exists, than we say $A$ and $B$ are {\bf equipotent}, or have the same cardinality.
 \end{boxdefine}
 
 \begin{boxexample}{}{}
-	If $A=\{1,2,3,4,\dots\}$ and $B=\{1,4,9,16,\dots\}$, we can say that the one-to-one correspondence is $a=b^2, a \in A, b \in B$, and the two sets are equivalent.
+	Suppose $A=\{1,2,3,4,\dots\}$ and $B=\{1,4,9,16,\dots\}$. We can say that the one-to-one correspondence is $a=b^2, a \in A, b \in B$. Thus the two sets are equipotent, and $|A|=|B|$.
 \end{boxexample}
 
-Another good definition to know is when an infinite set is {\bf countable}, though we will not use it much in this class.
+Another good definition to know is when an set is {\bf countably infinite}. Of course you can't literally count an infinite set. But it is used to distinguish smaller infinities (countable), and larger infinities (uncountable).
 
 \begin{boxdefine}{Countable Set}{}
-	An infinite set is {\bf countable} if it is equivalent to the natural numbers. 
+	An infinite set is {\bf countable} if it is equipotent to the natural numbers. 
 \end{boxdefine}
 
-We can also determine if one infinite set is a {\bf proper subset} of another infinite set. If each member of $A$ is paired with one and only one member in $B$, but not every member of $B$ is paried with one and only one member of $A$, than we say $A$ is a proper subset of $B$.
+\begin{boxexample}{}{}
+	The odd numbers are countably infinite, and the real numbers from zero to one are uncountably infinite.
+\end{boxexample}
+
+We can also determine if one infinite set is a {\bf proper subset} of another infinite set. If each member of $A$ is within $B$, but not every member of $B$ is within $A$, then $A$ is a proper subset of $B$, and $|A| < |B|$.
 
 \begin{boxexample}{}{}
-	If $A=\{2,3,4,5,\dots\}$ and $B=\{1,2,3,4,5,\dots\}$, than $A$ is a proper subset of $B$, because the one-to-one corresponce $a=b, a \in A, b \in B$
+	If $A=\{2,3,4,5,\dots\}$ and $B=\{1,2,3,4,5,\dots\}$, than $A$ is a proper subset of $B$.
+\end{boxexample}
+
+\begin{boxexample}{}{}
+	$\mathbb{W} \subset \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$.
 \end{boxexample}
 
 \chapter{Logic I}
@@ -31,7 +41,7 @@ A {\bf logical statement} is an expression that has a definite state of being ei
 Logic is the language of mathematics. We use logic to express (and prove!) ideas to another who speaks the language. When written, we aim to leave no doubt about our meaning. Of course, logic can also used to arrive at the correct results.
 
 \begin{boxremark*}{}{}
-	A {\bf paradox} is a statement that is both true and false, but can only exist within an inconsistant system of logic (and is not considered a statement within a consistem system of logic). For example, "This statement is false."
+	A {\bf paradox} is a statement that is both true and false, but can only exist within an inconsistant system of logic (and is not considered a statement within a consistem system of logic). For example, \say{This statement is false.}
 \end{boxremark*}
 
 \begin{boxexample}{}{}
@@ -71,7 +81,7 @@ This is a list of the logical connectors. They work as you would use them in Eng
 \medskip
 
 \begin{boxnotation*}{}{}
-	It is \emph{very} uncommon to use the set operations $\cup$ for OR and $\cap$ for AND, but the instructor sometimes uses these. The negative is sometimes written as "$\sim A$".
+	It is \emph{very} uncommon to use the set operations $\cup$ for OR and $\cap$ for AND, but the instructor sometimes uses these. The negative is sometimes written as \say{$\sim A$}.
 \end{boxnotation*}
 
 Lets define how these resolve using truth tables. The first truth table we will look at is {\bf not}:
@@ -141,7 +151,7 @@ Then the OR logical connector. This one is also works how you'd expect it in eng
 	$A \lor B = \text{True}$.
 \end{boxexample}
 
-Implies works a little differently. You can see implies also written as "if...then" statements. Pay attention to how this truth table works, and try to use it in English.
+Implies works a little differently. You can see implies also written as \say{if...then} statements. Pay attention to how this truth table works, this one can be confusing. I'll also give you an example of why these values make sense.
 
 \medskip
 \begin{tabular}{c|c|c}
@@ -158,16 +168,14 @@ Implies works a little differently. You can see implies also written as "if...th
 \end{tabular}
 \medskip
 
-I'm going to spend some extra time explaining this one with some more examples.
-
 \begin{boxexample}{}{}
-	Consider this example: "If it's raining, then I will bring an unbrella." That means the following statements are also true:
+	Consider this example: \say{If it's raining, then I will bring an unbrella.} That means the following statements are also true:
 	\begin{itemize}
 		\item It is raining, so I brought an unbrella.
 		\item It is not raining, but I brought an unbrella.
 		\item It is not raining, so I didn't being an unbrella.
 	\end{itemize}
-	But, the statement "It is raining, but I didn't bring an unbrella", means that I am lieing.
+	But, the statement \say{It is raining, but I didn't bring an unbrella}, means that I am lieing.
 \end{boxexample}
 
 \begin{boxexample}{}{}
@@ -196,7 +204,7 @@ Finally, iff (or if any only if) works simularly to above, but it works both way
 I will use the same example as above to illistrate the difference.
 
 \begin{boxexample}{}{}
-	Consider this example: "I will bring an unbrella if and only if it is raining." That means the following statements are also true:
+	Consider this example: \say{I will bring an unbrella if and only if it is raining.} That means the following statements are also true:
 	\begin{itemize}
 		\item It is raining, so I brought an unbrella.
 		\item It is not raining, so I didn't being an unbrella.
@@ -214,10 +222,10 @@ I will use the same example as above to illistrate the difference.
 	$A \iff B = \text{False}$.
 \end{boxexample}
 
-{\bf Simple statements} are "single ideas." They often express compairison, like "is", "equals", "less than", etc. They are the \emph{nouns} of logic. {\bf Logical connectors} are the \emph{verbs} of logic, and connect simple statements togeather to form {\bf compound statements}
+{\bf Simple statements} are \say{single ideas.} They often express compairison, like \say{is}, \say{equals}, \say{less than}, etc. They are the \emph{nouns} of logic. {\bf Logical connectors} are the \emph{verbs} of logic, and connect simple statements togeather to form {\bf compound statements}
 
 \begin{boxdefine}{Logical Connector, Simple \& Compound Statements}{}
-	A {\bf simple statement} is a "single idea" statement that does not use a {\bf logical connector} like "and", "or", "not", "implies", and "iff".
+	A {\bf simple statement} is a \say{single idea} statement that does not use a {\bf logical connector} like \say{and}, \say{or}, \say{not}, \say{implies}, and \say{iff}.
 	A {\bf compound statement} contains two or more simple statements connected by {\bf logical connectors}.
 \end{boxdefine}
 
@@ -230,3 +238,58 @@ Two important definitions for creating logical statements are {\bf tautologies},
 \begin{boxdefine}{Tautology and Contradictions}{}
 	A {\bf tautology} is a statement that is always true. A {\bf contradiction} is a statement that is always false.
 \end{boxdefine}
+
+\section{Applications of Truth Tables}
+
+All right, so suppose we have two statements and we want to see if they're equal. One way to do this would be to try every single True/False combination and see if the statements evaluate to the same value.
+
+\begin{boxexample}{}{}
+	Are the statements $\neg (A \lor B)$ and $\neg A \land \neg B$ equal?
+
+	\medskip
+	\newcolumntype{g}{>{\columncolor{skyblue}}c}	
+	\begin{tabular}{g|g|c|c|c|g|g}
+		\hline
+		$A$ & $B$ & $\neg A$ & $\neg B$ & $A \lor B$ & $\neg (A \lor B)$ & $\neg A \land \neg B$\\
+		\hline
+		F & F & T & T & F & T & T\\
+		F & T & T & F & T & F & F\\
+		T & F & F & T & T & F & F\\
+		T & T & F & F & T & F & F\\
+		\hline
+	\end{tabular}
+	\medskip
+
+	And, we see that $\neg (A \lor B) = \neg A \land \neg B$.
+\end{boxexample}
+
+Allright, lets try a harder one.
+
+\begin{boxexample}{}{}
+	Are the statements $\neg P \land (Q \lor R)$ and $(\neg Q \lor P) \land (Q \lor \neg R)$ equal?
+
+	\medskip
+	\begin{tabular}{r|c c c c c c c c}
+		\hline
+		\rowcolor{skyblue}
+		$P$ & F & T & F & T & F & T & F & T\\
+		\rowcolor{skyblue}
+		$Q$ & F & F & T & T & F & F & T & T\\
+		\rowcolor{skyblue}
+		$R$ & F & F & F & F & T & T & T & T\\
+		$\neg P$ & T & F & T & F & T & F & T & F\\
+		$\neg Q$ & T & T & F & F & T & T & F & F\\
+		$\neg R$ & T & T & T & T & F & F & F & F\\
+		$Q \lor R$ & F & F & T & T & T & T & T & T\\
+		\rowcolor{skyblue}
+		$\neg P \land (Q \lor R)$ & F & F & T & F & T & F & T & F\\
+		$\neg Q \lor P$ & T & T & F & T & T & T & F & T\\
+		$Q \lor \neg R$ & T & T & T & T & F & F & T & T\\
+		\rowcolor{skyblue}
+		$(\neg Q \lor P) \land (Q \lor \neg R)$ & T & T & F & T & F & F & F & T\\
+		\hline
+	\end{tabular}
+	\medskip
+\end{boxexample}
+
+Hey look, the two expressions I randomly  made up aren't equal.
