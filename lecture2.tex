@@ -42,7 +42,7 @@ And now we look at the complement of the set. So everything within the \emph{uni
 	\end{venndiagram2sets}
 \end{boxexample}
 
-And when we have two disjoint sets (two sets that do not share elements). So for $A \cap B = \phi$:
+And when we have two disjoint sets (two sets that do not share elements), no elements are coloured in their intersection. So for $A \cap B = \varnothing$:
 
 \begin{venndiagram2sets}[shade=skyblue,showframe=false,overlap=-.5cm]
 \end{venndiagram2sets}
@@ -54,7 +54,7 @@ And when we have two disjoint sets (two sets that do not share elements). So for
 	\end{venndiagram2sets}
 \end{boxexample}
 
-Now for the set-difference. $A \setminus B$:
+Now for the set-difference. We colour in the area that is in $A$, but not in $B$ So for $A \setminus B$:
 
 \begin{venndiagram2sets}[shade=skyblue,showframe=false]
 	\fillOnlyA
@@ -123,7 +123,7 @@ We'll go over some examples of filling out more complicated Venn Diagrams. In ge
 
 \section{Applications for Sets}
 
-Now we'll look at how sets and Venn Diagrams can be used to solve problems. In this class, we solve these intuitively. Algebra is another way to solve these problem though.
+Now we'll look at how sets and Venn Diagrams can be used to solve problems. In this class, we solve these intuitively. Algebra is another way to solve these problem though. These feel like Suduko puzzles to me.
 
 \begin{boxexample}{}{}
 	Suppose we surveyed 25 farms. 18 farms had potatoes, and 12 farms had corn. How many farms grow both potatoes and corn?\\
@@ -218,7 +218,7 @@ Now we'll look at how sets and Venn Diagrams can be used to solve problems. In t
 		\fillA \fillC
 	\end{venndiagram3sets}
 
-	There must be $40-5=35$ students in there. We know that $27$ of them play Carrom, and that $18$ of them play chess. So the Chess \& Carrom intersection must be $27+18-35=10$, and the Chess \& Carrom intersection is $10-4=5$. Thus the chess-only section is $18-6-4-3=5$, and the carrom-only section is $27-6-4-8=9$.
+	There must be $40-5=35$ students in there. We know that $27$ of them play Carrom, and that $18$ of them play chess. So the Chess \& Carrom intersection must be $27+18-35=10$, and the Chess \& Carrom intersection is $10-4=6$. Thus the chess-only section is $18-6-4-3=5$, and the carrom-only section is $27-6-4-8=9$.
 
 	\begin{venndiagram3sets}[shade=skyblue,showframe=false,labelA={Chess},labelB={Scrabble},labelC={Carrom},labelABC={4},labelOnlyAB={3},labelOnlyBC={8},labelOnlyB={5},labelOnlyAC={6},labelOnlyA={5},labelOnlyC={9}]
 	\end{venndiagram3sets}
