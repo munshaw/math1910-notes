@@ -28,16 +28,16 @@ This time we will visualise the union of two sets. Again, the coloured area repr
 	\end{venndiagram2sets}
 \end{boxexample}
 
-And now we look at the complement of the set. So everything within the \emph{universe of discourse} that is not in the set is coloured. So for $A^\complement$:
+And now we look at the complement of the set. So everything within the \emph{universe of discourse} that is not in the set is coloured. Consider the Venn Diagram for $A^\complement$:
 
-\begin{venndiagram2sets}[shade=skyblue,overlap=2.4cm,hgap=2.2cm,vgap=0.5cm,labelNotAB={\;\quad\qquad $\mathcal{U}$},labelB={}]
+\begin{venndiagram2sets}[shade=skyblue,labelNotAB={$\mathcal{U}$}]
 	\fillNotA
 \end{venndiagram2sets}
 
 \begin{boxexample}{}{}
-	Suppose $A=\{a,b,c\}$ and $\mathcal{U}=\{a,b,c,d,e,f,g,h\}$, then $A^\complement=\{d,e,f,g,h\}$ can be visualised with:
+	Suppose $A=\{a,b,c\}$ and $\mathcal{U}=\{a,b,c,d,e,f,g\}$, then $A^\complement=\{d,e,f,g\}$ can be visualised with:
 
-	\begin{venndiagram2sets}[shade=skyblue,overlap=2.4cm,hgap=2.2cm,vgap=0.5cm,labelNotAB={\;\quad\qquad $\mathcal{U}$ \: $d,e,f,g,h$},labelOnlyA={$a,b,c$},labelB={}]
+	\begin{venndiagram2sets}[shade=skyblue,labelNotAB={\quad $d,e,f,g$},labelOnlyA={$a,b,c$}]
 		\fillNotA
 	\end{venndiagram2sets}
 \end{boxexample}
