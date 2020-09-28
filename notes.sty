@@ -1,16 +1,11 @@
-% Latex stuff
+% Designed for b5 book
+
+% Latex
 \usepackage{libertine}
 \usepackage{epigraph}
 \usepackage{hyperref}
 
-% Math stuff
-\usepackage{mathtools}
-\usepackage{amsthm}
-\usepackage{amssymb}
-\usepackage{tabu}
-\usepackage{venndiagram}
-
-% Graphics stuff
+% Graphics
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \tcbuselibrary{breakable}
@@ -18,7 +13,7 @@
 \tcbuselibrary{theorems}
 \usepackage{colortbl}
 
-% Epigraph stuff
+% Epigraph width
 \setlength{\epigraphwidth}{7cm}
 
 % Box environments
@@ -31,7 +26,6 @@
 \newtcbtheorem[use counter from=boxdefine]{boxproposition}{Proposition}{bottom=1mm,toptitle=1mm,top=0mm,coltitle=blue!50!black!80,colback=blue!5,colframe=blue!5,fonttitle=\bfseries}{th}
 
 \newtcbtheorem[number within=boxdefine]{boxremark}{Remark}{bottom=1mm,toptitle=1mm,top=0mm,coltitle=brown!70!black,colback=brown!10,colframe=brown!10,enhanced jigsaw,breakable,fonttitle=\bfseries}{th}
-
 
 % Title box
 \definecolor{skyblue}{RGB}{125,212,216}
@@ -47,7 +41,7 @@
 	}
 }
 
-% Colour href's nicely.
+% Link colour
 \hypersetup{
 	colorlinks=true,
 	linkcolor=red,
