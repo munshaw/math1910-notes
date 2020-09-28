@@ -9,23 +9,107 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \tcbuselibrary{breakable}
-\tcbuselibrary{skins}
-\tcbuselibrary{theorems}
+	\tcbuselibrary{skins}
+	\tcbuselibrary{theorems}
 \usepackage{colortbl}
+
+% Colours (https://paletton.com/#uid=7000u0k7UUa3cZA5wXlaiQ5cFL3)
+\definecolor{pinkone}{RGB}{255,192,192}
+\definecolor{pinktwo}{RGB}{255,230,230}
+\definecolor{pinkthree}{RGB}{255,211,211}
+\definecolor{pinkfour}{RGB}{255,173,173}
+\definecolor{pinkfive}{RGB}{255,154,154}
+
+\definecolor{orangeone}{RGB}{255,221,192}
+\definecolor{orangetwo}{RGB}{255,241,230}
+\definecolor{orangethree}{RGB}{255,231,211}
+\definecolor{orangefour}{RGB}{255,210,173}
+\definecolor{orangefive}{RGB}{255,200,154}
+
+\definecolor{blueone}{RGB}{176,233,233}
+\definecolor{bluetwo}{RGB}{226,251,251}
+\definecolor{bluethree}{RGB}{201,243,243}
+\definecolor{bluefour}{RGB}{149,220,220}
+\definecolor{bluefive}{RGB}{123,204,204}
+
+\definecolor{greenone}{RGB}{184,244,184}
+\definecolor{greentwo}{RGB}{228,253,228}
+\definecolor{greenthree}{RGB}{206,249,206}
+\definecolor{greenfour}{RGB}{161,238,161}
+\definecolor{greenfive}{RGB}{139,230,139}
 
 % Epigraph width
 \setlength{\epigraphwidth}{7cm}
 
 % Box environments
-\newtcbtheorem[number within=section]{boxdefine}{Definition}{toptitle=1mm,top=0mm,bottom=1mm,coltitle=orange!60!yellow!70!black!110,colback=yellow!15,colframe=yellow!15,fonttitle=\bfseries}{th}
+\newtcbtheorem[number within=section]{boxdefine}{Definition}
+{
+	toptitle=1mm,
+	top=0mm,
+	bottom=1mm,
+	left=1mm,
+	right=1mm,
+	coltitle=black!40!orangefive,
+	colback=orangetwo,
+	colframe=orangetwo,
+	fonttitle=\bfseries
+}{th}
 
-\newtcbtheorem[number within=section]{boxnotation}{Alt. Notation}{toptitle=1mm,top=0mm,bottom=1mm,coltitle=red!40!black!80,colback=red!5,colframe=red!5,fonttitle=\bfseries}{th}
+\newtcbtheorem[number within=section]{boxnotation}{Alt. Notation}
+{
+	toptitle=1mm,
+	top=0mm,
+	bottom=1mm,
+	left=1mm,
+	right=1mm,
+	coltitle=black!40!pinkfive,
+	colback=pinktwo,
+	colframe=pinktwo,
+	fonttitle=\bfseries
+}{th}
 
-\newtcbtheorem[use counter from=boxdefine]{boxexample}{Example}{bottom=1mm,toptitle=1mm,top=0mm,coltitle=green!40!black,breakable,enhanced jigsaw,colback=green!10,colframe=green!10,fonttitle=\bfseries}{th}
+\newtcbtheorem[use counter from=boxdefine]{boxexample}{Example}
+{
+	bottom=1mm,
+	toptitle=1mm,
+	top=0mm,
+	left=1mm,
+	right=1mm,
+	coltitle=black!40!greenfive,
+	breakable,
+	enhanced jigsaw,
+	colback=greentwo,
+	colframe=greentwo,
+	fonttitle=\bfseries
+	}{th}
 
-\newtcbtheorem[use counter from=boxdefine]{boxproposition}{Proposition}{bottom=1mm,toptitle=1mm,top=0mm,coltitle=blue!50!black!80,colback=blue!5,colframe=blue!5,fonttitle=\bfseries}{th}
+\newtcbtheorem[use counter from=boxdefine]{boxproposition}{Proposition}
+{
+	bottom=1mm,
+	toptitle=1mm,
+	top=0mm,
+	left=1mm,
+	right=1mm,
+	coltitle=black!40!bluefive,
+	colback=bluetwo,
+	colframe=bluetwo,
+	fonttitle=\bfseries
+}{th}
 
-\newtcbtheorem[number within=boxdefine]{boxremark}{Remark}{bottom=1mm,toptitle=1mm,top=0mm,coltitle=brown!70!black,colback=brown!10,colframe=brown!10,enhanced jigsaw,breakable,fonttitle=\bfseries}{th}
+\newtcbtheorem[number within=boxdefine]{boxremark}{Remark}
+{
+	bottom=1mm,
+	toptitle=1mm,
+	top=0mm,
+	left=1mm,
+	right=1mm,
+	coltitle=black!40!pinkfive,
+	colback=pinktwo,
+	colframe=pinktwo,
+	enhanced jigsaw,
+	breakable,
+	fonttitle=\bfseries
+}{th}
 
 % Title box
 \definecolor{skyblue}{RGB}{125,212,216}
