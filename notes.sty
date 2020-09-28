@@ -18,6 +18,10 @@
 \tcbuselibrary{theorems}
 \usepackage{colortbl}
 
+% Epigraph stuff
+\setlength{\epigraphwidth}{7cm}
+
+% Box environments
 \newtcbtheorem[number within=section]{boxdefine}{Definition}{toptitle=1mm,top=0mm,bottom=1mm,coltitle=orange!60!yellow!70!black!110,colback=yellow!15,colframe=yellow!15,fonttitle=\bfseries}{th}
 
 \newtcbtheorem[number within=section]{boxnotation}{Alt. Notation}{toptitle=1mm,top=0mm,bottom=1mm,coltitle=red!40!black!80,colback=red!5,colframe=red!5,fonttitle=\bfseries}{th}
@@ -28,6 +32,8 @@
 
 \newtcbtheorem[number within=boxdefine]{boxremark}{Remark}{bottom=1mm,toptitle=1mm,top=0mm,coltitle=brown!70!black,colback=brown!10,colframe=brown!10,enhanced jigsaw,breakable,fonttitle=\bfseries}{th}
 
+
+% Title box
 \definecolor{skyblue}{RGB}{125,212,216}
 \newcommand*{\mytitle}[1]
 {
@@ -41,6 +47,7 @@
 	}
 }
 
+% Colour href's nicely.
 \hypersetup{
 	colorlinks=true,
 	linkcolor=red,
