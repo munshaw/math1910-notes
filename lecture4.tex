@@ -220,8 +220,10 @@ Then, when we have two switches in series, we need both of them to be on in orde
 	\end{circuitikz}
 \end{boxdefine}
 
+Using these building blocks, its possible to write some logical statements as circuits.
+
 \begin{boxexample}{}{}
-	Write this curcuit as a statement.
+	The following circuit can be written as $((P \land Q) \lor R) \land S$.
 
 	\begin{circuitikz}
 		\draw (0,0)
@@ -243,8 +245,4 @@ Then, when we have two switches in series, we need both of them to be on in orde
 		to [short] (6,-1)
 		to [short] (6,0);
 	\end{circuitikz}
-
-	\[
-		((P \land Q) \lor R) \land S
-	\]
 \end{boxexample}
