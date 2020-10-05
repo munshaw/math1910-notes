@@ -38,7 +38,7 @@ We can also determine if one infinite set is a {\bf proper subset} of another in
 
 \epigraph{Pure mathematics is, in its way, the poetry of logical ideas.}{Albert Einstein}
 
-If you like watching videos, I think \href{https://www.youtube.com/watch?v=SrU9YDoXE88}{Dr. Trefor Bazett} and \href{https://www.youtube.com/watch?v=wRMC-ttjhwM}{Emily S} have great videos for this.
+If you like watching videos, I think \href{https://www.youtube.com/watch?v=q2eyZZK-OIk&t}{Dr. Trefor Bazett} and \href{https://www.youtube.com/watch?v=wRMC-ttjhwM}{Emily S} have great videos for this.
 
 \begin{boxdefine}{Logical Statement}{}
 A {\bf logical statement} is an expression that has a definite state of being either true or false.
@@ -247,7 +247,11 @@ Two important definitions for creating logical statements are {\bf tautologies},
 
 \section{Applications of Truth Tables}
 
-All right, so suppose we have two statements and we want to see if they're equal. One way to do this would be to try every single True/False combination and see if the statements evaluate to the same value.
+\begin{boxdefine}{Logical Equivalence}{}
+	If two statements $P$ and $Q$ have the same truth values, they are {\bf equivalent} denoted as $P \iff Q$.
+\end{boxdefine}
+
+So suppose we have two statements and we want to see if they're equivalent. One way to do this would be to try every single True/False combination and see if the statements evaluate to the same value.
 
 \begin{boxexample}{}{}
 	Are the statements $\neg (A \lor B)$ and $\neg A \land \neg B$ equal?
@@ -269,7 +273,7 @@ All right, so suppose we have two statements and we want to see if they're equal
 	And, we see that $\neg (A \lor B) = \neg A \land \neg B$.
 \end{boxexample}
 
-Allright, lets try a harder one.
+Now lets try a harder one.
 
 \begin{boxexample}{}{}
 	Are the statements $\neg P \land (Q \lor R)$ and $(\neg Q \lor P) \land (Q \lor \neg R)$ equal?
